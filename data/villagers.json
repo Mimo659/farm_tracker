@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "name": "Abigail",
+        "hearts": 0,
+        "loves": ["Amethyst", "Banana Pudding", "Blackberry Cobbler", "Chocolate Cake", "Monster Compendium", "P pufferfish", "Pumpkin", "Spicy Eel"],
+        "likes": ["Ancient Sword", "Basilisk Paw", "Bone Flute", "Combat Quarterly", "Quartz"],
+        "dislikes": ["All Eggs", "All Fruit (except Fruit Tree Fruit)", "All Vegetables (except Hops, Pumpkin, Tea Leaves, & Wheat)", "Sugar", "Wild Horseradish"],
+        "hates": ["Clay", "Holly"]
+    },
+    {
+        "id": 2,
+        "name": "Alex",
+        "hearts": 0,
+        "loves": ["Complete Breakfast", "Jack Be Nimble, Jack Be Thick", "Salmon Dinner", "Treasure Appraisal Guide"],
+        "likes": ["All Eggs (except Void Egg)"],
+        "dislikes": ["Dwarf Scroll I", "Dwarf Scroll II", "Dwarf Scroll III", "Dwarf Scroll IV", "Flowering Cactuses", "Holly", "Quartz", "Salmonberry", "Seaweed", "Strange Bun", "The Alleyway Buffet", "The Art O' Crabbing", "The Diamond Hunter", "The Ol' Slitherin' Stone", "Treasure Map", "Wild Horseradish"],
+        "hates": ["Ancient Doll", "Anchor", "Bone Flute", "Carp Surprise", "Chewing Stick", "Chipped Amphora", "Cookie", "Dinosaur Egg", "Dried Starfish", "Dwarvish Helm", "Elvish Jewelry", "Glass Shards", "Golden Mask", "Golden Relic", "Horse The Book", "Ice Cream", "Jewels Of The Sea", "Maki Roll", "Monster Compendium", "Ornamental Fan", "Pancakes", "Pink Cake", "Prehistoric Handaxe", "Prehistoric Rib", "Prehistoric Scapula", "Prehistoric Skull", "Prehistoric Tibia", "Prehistoric Tool", "Prehistoric Vertebra", "Price Catalogue", "Rare Disc", "Rhubarb Pie", "Rusty Cog", "Rusty Spoon", "Rusty Spur", "Skeletal Hand", "Skeletal Tail", "Strange Doll", "Strange Doll (green)", "Stardew Valley Almanac", "The Alleyway Buffet", "The Art O' Crabbing", "The Diamond Hunter", "The Ol' Slitherin' Stone", "Treasure Map", "Trilobite", "Void Egg"]
+    },
+    {
+        "id": 3,
+        "name": "Elliott",
+        "hearts": 0,
+        "loves": ["Crab Cakes", "Duck Feather", "Lobster", "Pomegranate", "Squid Ink", "Tom Kha Soup"],
+        "likes": ["All Fruit (except Pomegranate, Salmonberry)", "Octopus", "Squid"],
+        "dislikes": ["All Milk", "Chanterelle", "Common Mushroom", "Daffodil", "Dandelion", "Hazelnut", "Holly", "Leek", "Morel", "Pizza", "Purple Mushroom", "Snow Yam", "Wild Horseradish"],
+        "hates": ["Amaranth", "Quartz", "Salmonberry", "Sea Cucumber"]
+    },
+    {
+        "id": 4,
+        "name": "Harvey",
+        "hearts": 0,
+        "loves": ["Coffee", "Pickles", "Super Meal", "Truffle Oil", "Wine"],
+        "likes": ["All Fruit (except Salmonberry, Spice Berry)", "Chanterelle", "Common Mushroom", "Daffodil", "Dandelion", "Duck Egg", "Duck Feather", "Goat Milk", "Goat Milk (Large)", "Hazelnut", "Holly", "Leek", "Morel", "Purple Mushroom", "Quartz", "Snow Yam", "Spring Onion", "Wild Horseradish", "Winter Root"],
+        "dislikes": ["All Eggs", "Bread", "Cheese", "Goat Cheese", "Goat Cheese (Large)", "Hops", "Mayonnaise", "Pancakes", "Pizza", "Salad", "Tea Leaves", "Trout Soup", "Wheat"],
+        "hates": ["Coral", "Nautilus Shell", "Rainbow Shell", "Salmonberry", "Spice Berry"]
+    },
+    {
+        "id": 5,
+        "name": "Sam",
+        "hearts": 0,
+        "loves": ["Cactus Fruit", "Maple Bar", "Pizza", "Tigerseye"],
+        "likes": ["All Eggs (except Void Egg)", "Joja Cola"],
+        "dislikes": ["All Fruit (except Cactus Fruit)", "All Vegetables", "Chanterelle", "Common Mushroom", "Daffodil", "Dandelion", "Duck Mayonnaise", "Goat Cheese", "Hazelnut", "Holly", "Leek", "Mayonnaise", "Morel", "Purple Mushroom", "Quartz", "Salmonberry", "Seaweed", "Snow Yam", "Wild Horseradish", "Winter Root"],
+        "hates": ["Coal", "Copper Bar", "Duck Mayonnaise", "Gold Bar", "Gold Ore", "Iridium Bar", "Iridium Ore", "Iron Bar", "Mayonnaise", "Pickles", "Refined Quartz", "Stone"]
+    },
+    {
+        "id": 6,
+        "name": "Sebastian",
+        "hearts": 0,
+        "loves": ["Frozen Tear", "Obsidian", "Pumpkin Soup", "Sashimi", "Void Egg"],
+        "likes": ["Coffee", "Flounder", "Green Tea", "Quartz"],
+        "dislikes": ["All Flowers (except Poppy)", "Chanterelle", "Common Mushroom", "Daffodil", "Dandelion", "Hazelnut", "Holly", "Leek", "Morel", "Purple Mushroom", "Salmonberry", "Snow Yam", "Wild Horseradish", "Winter Root"],
+        "hates": ["All Artisan Goods (except Coffee, Green Tea, Oil)", "All Eggs (except Void Egg)", "Clay", "Complete Breakfast", "Farmer's Lunch", "Omelet", "Pizza"]
+    },
+    {
+        "id": 7,
+        "name": "Penny",
+        "hearts": 0,
+        "loves": ["Diamond", "Emerald", "Melon", "Poppy", "Poppyseed Muffin", "Red Plate", "Roots Platter", "Sandfish", "Tom Kha Soup"],
+        "likes": ["All Milk", "Dandelion", "Leek"],
+        "dislikes": ["Algae Soup", "Chanterelle", "Common Mushroom", "Daffodil", "Duck Feather", "Hazelnut", "Holly", "Morel", "Pale Broth", "Purple Mushroom", "Quartz", "Red Mushroom", "Salmonberry", "Seaweed", "Snow Yam", "Trout Soup", "Wild Horseradish", "Winter Root", "Wool"],
+        "hates": ["Beer", "Grape", "Holly", "Hops", "Mead", "Pale Ale", "Pina Colada", "Rabbit's Foot", "Wine"]
+    },
+    {
+        "id": 8,
+        "name": "Leah",
+        "hearts": 0,
+        "loves": ["Goat Cheese", "Poppyseed Muffin", "Salad", "Stir Fry", "Truffle", "Vegetable Medley", "Wine"],
+        "likes": ["All Eggs (except Void Egg)", "All Fruit", "All Milk", "Chanterelle", "Common Mushroom", "D Daffodil", "Dandelion", "Driftwood", "Hazelnut", "Holly", "Leek", "Morel", "Purple Mushroom", "Snow Yam", "Spring Onion", "Wild Horseradish", "Winter Root"],
+        "dislikes": ["All Forage (except Chanterelle, Common Mushroom, Daffodil, Dandelion, Driftwood, Hazelnut, Holly, Leek, Morel, Purple Mushroom, Snow Yam, Spring Onion, Wild Horseradish, Winter Root)", "Carp Surprise", "Cookie", "Fried Egg", "Ice Cream", "Pancakes", "Pink Cake", "Rice Pudding", "Seaweed", "Survival Burger", "Tortilla"],
+        "hates": ["Bread", "Hashbrowns", "Pancakes", "Pizza", "Void Egg"]
+    },
+    {
+        "id": 9,
+        "name": "Shane",
+        "hearts": 0,
+        "loves": ["Beer", "Hot Pepper", "Pepper Poppers", "Pizza"],
+        "likes": ["All Eggs", "All Fruit"],
+        "dislikes": ["Chanterelle", "Common Mushroom", "Daffodil", "Dandelion", "Hazelnut", "Holly", "Leek", "Morel", "Purple Mushroom", "Seaweed", "Snow Yam", "Wild Horseradish", "Winter Root"],
+        "hates": ["Pickles", "Quartz"]
+    },
+    {
+        "id": 10,
+        "name": "Maru",
+        "hearts": 0,
+        "loves": ["Battery Pack", "Cauliflower", "Cheese Cauliflower", "Diamond", "Gold Bar", "Iridium Bar", "Miner's Treat", "Pepper Poppers", "Rhubarb Pie", "Strawberry"],
+        "likes": ["Copper Bar", "Iron Bar", "Oak Resin", "Pine Tar", "Quartz"],
+        "dislikes": ["Blackberry", "Chanterelle", "Common Mushroom", "Crystal Fruit", "Daffodil", "Dandelion", "Hazelnut", "Holly", "Leek", "Maple Syrup", "Morel", "Purple Mushroom", "Salmonberry", "Snow Yam", "Wild Horseradish", "Winter Root"],
+        "hates": ["Honey", "Pickles", "Truffle"]
+    },
+    {
+        "id": 11,
+        "name": "Emily",
+        "hearts": 0,
+        "loves": ["Amethyst", "Aquamarine", "Cloth", "Emerald", "Jade", "Ruby", "Survival Burger", "Topaz", "Wool"],
+        "likes": ["Daffodil", "Quartz"],
+        "dislikes": ["Chanterelle", "Common Mushroom", "Dandelion", "Hazelnut", "Holly", "Leek", "Morel", "Purple Mushroom", "Salmonberry", "Seaweed", "Snow Yam", "Wild Horseradish", "Winter Root"],
+        "hates": ["Fish Taco", "Holly", "Maki Roll", "Salmon Dinner", "Sashimi"]
+    },
+    {
+        "id": 12,
+        "name": "Haley",
+        "hearts": 0,
+        "loves": ["Coconut", "Fruit Salad", "Pink Cake", "Sunflower"],
+        "likes": ["Daffodil"],
+        "dislikes": ["All Eggs", "All Fruit (except Coconut)", "All Vegetables", "Chanterelle", "Common Mushroom", "Dandelion", "Hazelnut", "Holly", "Leek", "Morel", "Purple Mushroom", "Quartz", "Snow Yam", "Wild Horseradish", "Winter Root"],
+        "hates": ["All Fish", "Clay", "Prismatic Shard", "Wild Horseradish"]
+    }
+]
