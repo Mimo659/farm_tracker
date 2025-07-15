@@ -1,0 +1,72 @@
+{
+    "en": {
+        "welcome": "Track your farm progress offline!",
+        "tabs": {
+            "inventory": "Inventory",
+            "farming": "Farming",
+            "villagers": "Villagers",
+            "quests": "Quests"
+        },
+        "categories": {
+            "all": "All Items",
+            "minerals": "Minerals",
+            "artifacts": "Artifacts",
+            "fish": "Fish"
+        },
+        "farming": {
+            "addCrop": "Add Crop",
+            "animalTable": {
+                "animal": "Animal",
+                "count": "Count",
+                "products": "Products",
+                "actions": "Actions"
+            }
+        },
+        "villagers": {
+            "giftPreferences": "Gift Preferences",
+            "loves": "Loves",
+            "likes": "Likes",
+            "dislikes": "Dislikes",
+            "hates": "Hates"
+        },
+        "quests": {
+            "bundles": "Community Center Bundles",
+            "achievements": "Achievements"
+        }
+    },
+    "de": {
+        "welcome": "Verfolge deinen Bauernhof-Fortschritt offline!",
+        "tabs": {
+            "inventory": "Inventar",
+            "farming": "Landwirtschaft",
+            "villagers": "Bewohner",
+            "quests": "Aufgaben"
+        },
+        "categories": {
+            "all": "Alle Gegenstände",
+            "minerals": "Mineralien",
+            "artifacts": "Artefakte",
+            "fish": "Fische"
+        },
+        "farming": {
+            "addCrop": "Pflanze hinzufügen",
+            "animalTable": {
+                "animal": "Tier",
+                "count": "Anzahl",
+                "products": "Produkte",
+                "actions": "Aktionen"
+            }
+        },
+        "villagers": {
+            "giftPreferences": "Geschenkvorlieben",
+            "loves": "Liebt",
+            "likes": "Mag",
+            "dislikes": "Mag nicht",
+            "hates": "Verabscheut"
+        },
+        "quests": {
+            "bundles": "Gemeindezentrum Pakete",
+            "achievements": "Errungenschaften"
+        }
+    }
+}
