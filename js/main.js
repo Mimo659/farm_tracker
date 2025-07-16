@@ -304,7 +304,7 @@ function renderVillagerList() {
             <img src="images/villagers/${villager.name}.png" alt="${villager.name}" class="w-16 h-16 object-cover mb-2 pixel-border villager-face">
             <h3 class="pixel-font text-sm text-center">${villager.name}</h3>
             <div class="flex mt-2 items-center">
-                <img src="images/hearts/${villager.hearts}_hearts.png" class="w-auto h-4 mx-px" />
+                ${[...Array(14)].map((_, i) => `<img src="images/${i < villager.hearts ? '' : 'hearts/'}${i < villager.hearts ? 'heart' : '0_hearts'}.png" class="w-auto h-4 mx-px" />`).join('')}
             </div>
         `;
 
@@ -338,7 +338,7 @@ function showVillagerDetail(villagerId) {
     // Set villager data
     document.getElementById('villager-img').src = `images/villagers/${villager.name}.png`;
     document.getElementById('villager-name').textContent = villager.name;
-    document.getElementById('villager-hearts').innerHTML = `<img src="images/hearts/${villager.hearts}_hearts.png" class="w-auto h-4 mx-px" />`;
+    document.getElementById('villager-hearts').innerHTML = [...Array(14)].map((_, i) => `<img src="images/${i < villager.hearts ? '' : 'hearts/'}${i < villager.hearts ? 'heart' : '0_hearts'}.png" class="w-auto h-4 mx-px" />`).join('');
 
     // Set gift preferences
     const setGiftList = (listId, items) => {
