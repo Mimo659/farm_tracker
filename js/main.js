@@ -46,15 +46,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         gameData.farmInfo.season = document.getElementById('current-season').value;
         gameData.farmInfo.year = parseInt(document.getElementById('current-year').value);
 
-        document.getElementById('landing-modal').classList.add('hidden');
-        document.getElementById('main-content').classList.remove('hidden');
+        document.getElementById('setup').classList.add('hidden');
+        document.querySelector('main').classList.remove('hidden');
 
         // Update UI with farm info
-        document.getElementById('welcome-text').textContent =
-            `Welcome to ${gameData.farmInfo.name}, ${gameData.farmInfo.playerName}!`;
+        // document.getElementById('welcome-text').textContent =
+        //     `Welcome to ${gameData.farmInfo.name}, ${gameData.farmInfo.playerName}!`;
 
         // Set initial season
-        document.getElementById('season-select').value = gameData.farmInfo.season;
+        document.getElementById('current-season').value = gameData.farmInfo.season;
         renderCrops(gameData.farmInfo.season);
     });
 
@@ -224,11 +224,11 @@ function renderInventoryItems(category) {
 
 // Farming Tab
 function loadFarmingTab() {
-    const seasonSelect = document.getElementById('season-select');
+    const seasonSelect = document.getElementById('current-season');
     const addCropBtn = document.getElementById('add-crop');
-    const cropModal = document.getElementById('crop-modal');
+    const cropModal = document.getElementById('add-crop-modal');
     const cancelCropBtn = document.getElementById('cancel-crop');
-    const saveCropBtn = document.getElementById('save-crop');
+    const saveCropBtn = document.querySelector('#add-crop-modal button:last-child');
 
     // Load crops for current season
     renderCrops(seasonSelect.value);
@@ -290,7 +290,7 @@ function renderCrops(season) {
         winter: []
     };
 
-    const crops = sampleCrops[season];
+    const crops = sampleCrops[season.toLowerCase()];
 
     if (crops.length === 0) {
         cropList.innerHTML = `<p class="col-span-3 text-center">No crops planted this season.</p>`;
@@ -349,7 +349,7 @@ function renderVillagerList() {
         });
 
         villagerCard.addEventListener('dblclick', () => {
-            showVillagerDetail(villager.id);
+.            showVillagerDetail(villager.id);
         });
 
         villagerList.appendChild(villagerCard);
