@@ -65,7 +65,7 @@
     { "id": 64, "name": "Helvite", "category": "mineral", "collected": false, "img": "Helvite.png" },
     { "id": 65, "name": "Hematite", "category": "mineral", "collected": false, "img": "Hematite.png" },
     { "id": 66, "name": "Jade", "category": "mineral", "collected": false, "img": "Jade.png" },
-    { "id": 67, "name": "Jagoite", "category": "mineral",.png" },
+    { "id": 67, "name": "Jagoite", "category": "mineral", "collected": false, "img": "Jagoite.png" },
     { "id": 68, "name": "Jamborite", "category": "mineral", "collected": false, "img": "Jamborite.png" },
     { "id": 69, "name": "Jasper", "category": "mineral", "collected": false, "img": "Jasper.png" },
     { "id": 70, "name": "Kyanite", "category": "mineral", "collected": false, "img": "Kyanite.png" },
