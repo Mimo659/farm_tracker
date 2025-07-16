@@ -1,11 +1,12 @@
 // Fetch data from JSON files
 async function loadGameData() {
-    const [languages, items, villagers, bundles, achievements] = await Promise.all([
+    const [languages, items, villagers, bundles, achievements, museum] = await Promise.all([
         fetch('data/languages.json').then(response => response.json()),
         fetch('data/items.json').then(response => response.json()),
         fetch('data/villagers.json').then(response => response.json()),
         fetch('data/bundles.json').then(response => response.json()),
-        fetch('data/achievements.json').then(response => response.json())
+        fetch('data/achievements.json').then(response => response.json()),
+        fetch('data/museum.json').then(response => response.json())
     ]);
 
     return {
@@ -19,7 +20,8 @@ async function loadGameData() {
         items,
         villagers,
         bundles,
-        achievements
+        achievements,
+        museum
     };
 }
 
@@ -74,6 +76,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     loadFarmingTab();
     loadVillagersTab();
     loadQuestsTab();
+    loadMuseumTab();
 
     // Set default language
     setLanguage('en');
@@ -472,5 +475,36 @@ function renderAchievements() {
         });
 
         achievementList.appendChild(achievementCard);
+    });
+}
+
+// Museum Tab
+function loadMuseumTab() {
+    renderMuseumItems();
+}
+
+function renderMuseumItems() {
+    const museumItems = document.getElementById('museum-items');
+    museumItems.innerHTML = '';
+
+    gameData.museum.forEach(item => {
+        const itemCard = document.createElement('div');
+        itemCard.className = `item-card bg-white p-4 pixel-border flex flex-col items-center cursor-pointer ${item.collected ? 'opacity-50' : ''}`;
+        itemCard.innerHTML = `
+            <img src="images/items/${item.img}" alt="${item.name}" class="w-16 h-16 object-contain mb-2 pixel-border villager-face">
+            <h3 class="pixel-font text-sm text-center">${item.name}</h3>
+            <button class="pixel-button mt-2 pixel-font px-2 py-1 text-xs ${item.collected ? 'bg-gray-400' : 'bg-[#5b8c5a]'} text-white pixel-border">
+                ${item.collected ? 'Donated' : 'Mark Donated'}
+            </button>
+        `;
+
+        const toggleButton = itemCard.querySelector('button');
+        toggleButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            item.collected = !item.collected;
+            renderMuseumItems();
+        });
+
+        museumItems.appendChild(itemCard);
     });
 }
