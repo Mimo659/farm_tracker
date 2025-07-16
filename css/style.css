@@ -1,3 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import "tokens.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html { font-family: 'Press Start 2P', cursive; }
+  body { background: var(--c-bg); color: var(--c-dark); }
+}
+
+.glass {
+  background: var(--c-surface);
+  backdrop-filter: blur(var(--blur));
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: var(--r);
+  box-shadow: 0 8px 32px var(--c-shadow);
+  transition: transform .2s, box-shadow .2s;
+}
+.glass:hover { transform: translateY(-2px); box-shadow: 0 12px 40px var(--c-shadow); }
+.pixel-border {
+  image-rendering: pixelated;
+  border: 2px solid var(--c-dark);
+  box-shadow: 0 0 0 2px var(--c-dark), 4px 4px 0 var(--c-dark);
+}
+.auto-grid {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
+}
+.tab {
+  @apply px-3 py-2 text-sm rounded-t-md transition;
+}
+.tab.active {
+  background: var(--c-secondary);
+  color: var(--c-dark);
+}
+.group:hover .group-hover\:block { display: block !important; }
+
+/* High-contrast Gift button & text */
+.glass .bg-primary {
+  background: var(--c-primary) !important;
+  color: white !important;
+}
+.glass .text-red-500   { color: #dc2626 !important; }
+.glass .text-yellow-400{ color: #f59e0b !important; }
+.glass .text-gray-400  { color: #6b7280 !important; }
+.glass .text-red-600   { color: #b91c1c !important; }

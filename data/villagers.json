@@ -1,110 +1,39 @@
 [
-    {
-        "id": 1,
-        "name": "Abigail",
-        "hearts": 0,
-        "loves": ["Amethyst", "Banana Pudding", "Blackberry Cobbler", "Chocolate Cake", "Monster Compendium", "P pufferfish", "Pumpkin", "Spicy Eel"],
-        "likes": ["Ancient Sword", "Basilisk Paw", "Bone Flute", "Combat Quarterly", "Quartz"],
-        "dislikes": ["All Eggs", "All Fruit (except Fruit Tree Fruit)", "All Vegetables (except Hops, Pumpkin, Tea Leaves, & Wheat)", "Sugar", "Wild Horseradish"],
-        "hates": ["Clay", "Holly"]
-    },
-    {
-        "id": 2,
-        "name": "Alex",
-        "hearts": 0,
-        "loves": ["Complete Breakfast", "Jack Be Nimble, Jack Be Thick", "Salmon Dinner", "Treasure Appraisal Guide"],
-        "likes": ["All Eggs (except Void Egg)"],
-        "dislikes": ["Dwarf Scroll I", "Dwarf Scroll II", "Dwarf Scroll III", "Dwarf Scroll IV", "Flowering Cactuses", "Holly", "Quartz", "Salmonberry", "Seaweed", "Strange Bun", "The Alleyway Buffet", "The Art O' Crabbing", "The Diamond Hunter", "The Ol' Slitherin' Stone", "Treasure Map", "Wild Horseradish"],
-        "hates": ["Ancient Doll", "Anchor", "Bone Flute", "Carp Surprise", "Chewing Stick", "Chipped Amphora", "Cookie", "Dinosaur Egg", "Dried Starfish", "Dwarvish Helm", "Elvish Jewelry", "Glass Shards", "Golden Mask", "Golden Relic", "Horse The Book", "Ice Cream", "Jewels Of The Sea", "Maki Roll", "Monster Compendium", "Ornamental Fan", "Pancakes", "Pink Cake", "Prehistoric Handaxe", "Prehistoric Rib", "Prehistoric Scapula", "Prehistoric Skull", "Prehistoric Tibia", "Prehistoric Tool", "Prehistoric Vertebra", "Price Catalogue", "Rare Disc", "Rhubarb Pie", "Rusty Cog", "Rusty Spoon", "Rusty Spur", "Skeletal Hand", "Skeletal Tail", "Strange Doll", "Strange Doll (green)", "Stardew Valley Almanac", "The Alleyway Buffet", "The Art O' Crabbing", "The Diamond Hunter", "The Ol' Slitherin' Stone", "Treasure Map", "Trilobite", "Void Egg"]
-    },
-    {
-        "id": 3,
-        "name": "Elliott",
-        "hearts": 0,
-        "loves": ["Crab Cakes", "Duck Feather", "Lobster", "Pomegranate", "Squid Ink", "Tom Kha Soup"],
-        "likes": ["All Fruit (except Pomegranate, Salmonberry)", "Octopus", "Squid"],
-        "dislikes": ["All Milk", "Chanterelle", "Common Mushroom", "Daffodil", "Dandelion", "Hazelnut", "Holly", "Leek", "Morel", "Pizza", "Purple Mushroom", "Snow Yam", "Wild Horseradish"],
-        "hates": ["Amaranth", "Quartz", "Salmonberry", "Sea Cucumber"]
-    },
-    {
-        "id": 4,
-        "name": "Harvey",
-        "hearts": 0,
-        "loves": ["Coffee", "Pickles", "Super Meal", "Truffle Oil", "Wine"],
-        "likes": ["All Fruit (except Salmonberry, Spice Berry)", "Chanterelle", "Common Mushroom", "Daffodil", "Dandelion", "Duck Egg", "Duck Feather", "Goat Milk", "Goat Milk (Large)", "Hazelnut", "Holly", "Leek", "Morel", "Purple Mushroom", "Quartz", "Snow Yam", "Spring Onion", "Wild Horseradish", "Winter Root"],
-        "dislikes": ["All Eggs", "Bread", "Cheese", "Goat Cheese", "Goat Cheese (Large)", "Hops", "Mayonnaise", "Pancakes", "Pizza", "Salad", "Tea Leaves", "Trout Soup", "Wheat"],
-        "hates": ["Coral", "Nautilus Shell", "Rainbow Shell", "Salmonberry", "Spice Berry"]
-    },
-    {
-        "id": 5,
-        "name": "Sam",
-        "hearts": 0,
-        "loves": ["Cactus Fruit", "Maple Bar", "Pizza", "Tigerseye"],
-        "likes": ["All Eggs (except Void Egg)", "Joja Cola"],
-        "dislikes": ["All Fruit (except Cactus Fruit)", "All Vegetables", "Chanterelle", "Common Mushroom", "Daffodil", "Dandelion", "Duck Mayonnaise", "Goat Cheese", "Hazelnut", "Holly", "Leek", "Mayonnaise", "Morel", "Purple Mushroom", "Quartz", "Salmonberry", "Seaweed", "Snow Yam", "Wild Horseradish", "Winter Root"],
-        "hates": ["Coal", "Copper Bar", "Duck Mayonnaise", "Gold Bar", "Gold Ore", "Iridium Bar", "Iridium Ore", "Iron Bar", "Mayonnaise", "Pickles", "Refined Quartz", "Stone"]
-    },
-    {
-        "id": 6,
-        "name": "Sebastian",
-        "hearts": 0,
-        "loves": ["Frozen Tear", "Obsidian", "Pumpkin Soup", "Sashimi", "Void Egg"],
-        "likes": ["Coffee", "Flounder", "Green Tea", "Quartz"],
-        "dislikes": ["All Flowers (except Poppy)", "Chanterelle", "Common Mushroom", "Daffodil", "Dandelion", "Hazelnut", "Holly", "Leek", "Morel", "Purple Mushroom", "Salmonberry", "Snow Yam", "Wild Horseradish", "Winter Root"],
-        "hates": ["All Artisan Goods (except Coffee, Green Tea, Oil)", "All Eggs (except Void Egg)", "Clay", "Complete Breakfast", "Farmer's Lunch", "Omelet", "Pizza"]
-    },
-    {
-        "id": 7,
-        "name": "Penny",
-        "hearts": 0,
-        "loves": ["Diamond", "Emerald", "Melon", "Poppy", "Poppyseed Muffin", "Red Plate", "Roots Platter", "Sandfish", "Tom Kha Soup"],
-        "likes": ["All Milk", "Dandelion", "Leek"],
-        "dislikes": ["Algae Soup", "Chanterelle", "Common Mushroom", "Daffodil", "Duck Feather", "Hazelnut", "Holly", "Morel", "Pale Broth", "Purple Mushroom", "Quartz", "Red Mushroom", "Salmonberry", "Seaweed", "Snow Yam", "Trout Soup", "Wild Horseradish", "Winter Root", "Wool"],
-        "hates": ["Beer", "Grape", "Holly", "Hops", "Mead", "Pale Ale", "Pina Colada", "Rabbit's Foot", "Wine"]
-    },
-    {
-        "id": 8,
-        "name": "Leah",
-        "hearts": 0,
-        "loves": ["Goat Cheese", "Poppyseed Muffin", "Salad", "Stir Fry", "Truffle", "Vegetable Medley", "Wine"],
-        "likes": ["All Eggs (except Void Egg)", "All Fruit", "All Milk", "Chanterelle", "Common Mushroom", "D Daffodil", "Dandelion", "Driftwood", "Hazelnut", "Holly", "Leek", "Morel", "Purple Mushroom", "Snow Yam", "Spring Onion", "Wild Horseradish", "Winter Root"],
-        "dislikes": ["All Forage (except Chanterelle, Common Mushroom, Daffodil, Dandelion, Driftwood, Hazelnut, Holly, Leek, Morel, Purple Mushroom, Snow Yam, Spring Onion, Wild Horseradish, Winter Root)", "Carp Surprise", "Cookie", "Fried Egg", "Ice Cream", "Pancakes", "Pink Cake", "Rice Pudding", "Seaweed", "Survival Burger", "Tortilla"],
-        "hates": ["Bread", "Hashbrowns", "Pancakes", "Pizza", "Void Egg"]
-    },
-    {
-        "id": 9,
-        "name": "Shane",
-        "hearts": 0,
-        "loves": ["Beer", "Hot Pepper", "Pepper Poppers", "Pizza"],
-        "likes": ["All Eggs", "All Fruit"],
-        "dislikes": ["Chanterelle", "Common Mushroom", "Daffodil", "Dandelion", "Hazelnut", "Holly", "Leek", "Morel", "Purple Mushroom", "Seaweed", "Snow Yam", "Wild Horseradish", "Winter Root"],
-        "hates": ["Pickles", "Quartz"]
-    },
-    {
-        "id": 10,
-        "name": "Maru",
-        "hearts": 0,
-        "loves": ["Battery Pack", "Cauliflower", "Cheese Cauliflower", "Diamond", "Gold Bar", "Iridium Bar", "Miner's Treat", "Pepper Poppers", "Rhubarb Pie", "Strawberry"],
-        "likes": ["Copper Bar", "Iron Bar", "Oak Resin", "Pine Tar", "Quartz"],
-        "dislikes": ["Blackberry", "Chanterelle", "Common Mushroom", "Crystal Fruit", "Daffodil", "Dandelion", "Hazelnut", "Holly", "Leek", "Maple Syrup", "Morel", "Purple Mushroom", "Salmonberry", "Snow Yam", "Wild Horseradish", "Winter Root"],
-        "hates": ["Honey", "Pickles", "Truffle"]
-    },
-    {
-        "id": 11,
-        "name": "Emily",
-        "hearts": 0,
-        "loves": ["Amethyst", "Aquamarine", "Cloth", "Emerald", "Jade", "Ruby", "Survival Burger", "Topaz", "Wool"],
-        "likes": ["Daffodil", "Quartz"],
-        "dislikes": ["Chanterelle", "Common Mushroom", "Dandelion", "Hazelnut", "Holly", "Leek", "Morel", "Purple Mushroom", "Salmonberry", "Seaweed", "Snow Yam", "Wild Horseradish", "Winter Root"],
-        "hates": ["Fish Taco", "Holly", "Maki Roll", "Salmon Dinner", "Sashimi"]
-    },
-    {
-        "id": 12,
-        "name": "Haley",
-        "hearts": 0,
-        "loves": ["Coconut", "Fruit Salad", "Pink Cake", "Sunflower"],
-        "likes": ["Daffodil"],
-        "dislikes": ["All Eggs", "All Fruit (except Coconut)", "All Vegetables", "Chanterelle", "Common Mushroom", "Dandelion", "Hazelnut", "Holly", "Leek", "Morel", "Purple Mushroom", "Quartz", "Snow Yam", "Wild Horseradish", "Winter Root"],
-        "hates": ["All Fish", "Clay", "Prismatic Shard", "Wild Horseradish"]
-    }
+  {"id":1,"name":"Abigail","hearts":0,"birthday":"fall13","loves":["Amethyst","Banana Pudding","Blackberry Cobbler","Chocolate Cake","Monster Compendium","Pufferfish","Pumpkin","Spicy Eel"],"likes":["Ancient Sword","Basilisk Paw","Bone Flute","Combat Quarterly","Quartz"],"dislikes":["All Eggs","All Fruit (except Fruit Tree Fruit)","All Vegetables (except Hops, Pumpkin, Tea Leaves & Wheat)","Sugar","Wild Horseradish"],"hates":["Clay","Holly"]},
+  {"id":2,"name":"Alex","hearts":0,"birthday":"summer13","loves":["Complete Breakfast","Jack Be Nimble, Jack Be Thick","Salmon Dinner","Treasure Appraisal Guide"],"likes":["All Eggs (except Void Egg)"],"dislikes":["Holly","Quartz","Salmonberry","Seaweed","Strange Bun"],"hates":["Ancient Doll","Holly"]},
+  {"id":3,"name":"Caroline","hearts":0,"birthday":"winter7","loves":["Summer Spangle","Tea Leaves"],"likes":["Daffodil"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":4,"name":"Clint","hearts":0,"birthday":"winter26","loves":["Amethyst","Aquamarine","Artichoke Dip","Emerald","Fiddlehead Risotto","Gold Bar","Iridium Bar","Jade","Ruby","Topaz"],"likes":["Copper Bar","Iron Bar"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":5,"name":"Demetrius","hearts":0,"birthday":"summer19","loves":["Ice Cream","Rice Pudding","Strawberry"],"likes":["Purple Mushroom"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":6,"name":"Dwarf","hearts":0,"birthday":"summer22","loves":["Amethyst","Aquamarine","Emerald","Jade","Ruby","Topaz"],"likes":["Gem","Quartz"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":7,"name":"Elliott","hearts":0,"birthday":"fall5","loves":["Crab Cakes","Duck Feather","Lobster","Pomegranate","Squid Ink","Tom Kha Soup"],"likes":["All Fruit","Octopus","Squid"],"dislikes":["Holly"],"hates":["Amaranth","Quartz","Salmonberry","Sea Cucumber"]},
+  {"id":8,"name":"Emily","hearts":0,"birthday":"spring27","loves":["Amethyst","Aquamarine","Cloth","Emerald","Jade","Ruby","Survival Burger","Topaz","Wool"],"likes":["Daffodil","Quartz"],"dislikes":["Holly"],"hates":["Fish Taco","Holly","Maki Roll","Salmon Dinner","Sashimi"]},
+  {"id":9,"name":"Evelyn","hearts":0,"birthday":"winter20","loves":["Beet","Chocolate Cake","Diamond","Fairy Rose","Tulip"],"likes":["Daffodil"],"dislikes":["Holly"],"hates":["Clam","Holly"]},
+  {"id":10,"name":"George","hearts":0,"birthday":"fall24","loves":["Fried Mushroom","Leek"],"likes":["Daffodil"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":11,"name":"Gus","hearts":0,"birthday":"summer8","loves":["Escargot","Orange","Diamond"],"likes":["Daffodil"],"dislikes":["Coal","Holly"],"hates":["Holly"]},
+  {"id":12,"name":"Haley","hearts":0,"birthday":"spring14","loves":["Coconut","Fruit Salad","Pink Cake","Sunflower"],"likes":["Daffodil"],"dislikes":["Holly"],"hates":["All Fish","Clay","Prismatic Shard","Wild Horseradish"]},
+  {"id":13,"name":"Harvey","hearts":0,"birthday":"winter14","loves":["Coffee","Pickles","Super Meal","Truffle Oil","Wine"],"likes":["Goat Milk"],"dislikes":["Holly"],"hates":["Coral","Holly","Nautilus Shell","Rainbow Shell","Salmonberry","Spice Berry"]},
+  {"id":14,"name":"Jas","hearts":0,"birthday":"summer4","loves":["Fairy Rose","Pink Cake","Plum Pudding"],"likes":["Sweet Pea"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":15,"name":"Jodi","hearts":0,"birthday":"fall11","loves":["Chocolate Cake","Crispy Bass","Diamond","Pancakes","Rhubarb Pie","Vegetable Medley"],"likes":["Egg","Milk"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":16,"name":"Kent","hearts":0,"birthday":"spring4","loves":["Fiddlehead Risotto","Roasted Hazelnuts"],"likes":["Egg","Milk"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":17,"name":"Krobus","hearts":0,"birthday":"winter1","loves":["Diamond","Iridium Bar","Pumpkin","Void Egg","Void Mayonnaise"],"likes":["Gold Bar"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":18,"name":"Leah","hearts":0,"birthday":"winter23","loves":["Goat Cheese","Poppyseed Muffin","Salad","Stir Fry","Truffle","Vegetable Medley","Wine"],"likes":["Egg","Milk"],"dislikes":["Holly"],"hates":["Bread","Holly","Pizza"]},
+  {"id":19,"name":"Lewis","hearts":0,"birthday":"spring7","loves":["Autumn's Bounty","Glazed Yams","Hot Pepper","Vegetable Medley"],"likes":["Blueberry"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":20,"name":"Linus","hearts":0,"birthday":"winter3","loves":["Blueberry Tart","Cactus Fruit","Coconut","Dish o' The Sea","Yam"],"likes":["Coconut"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":21,"name":"Marnie","hearts":0,"birthday":"fall18","loves":["Diamond","Farmer's Lunch","Pink Cake","Pumpkin Pie"],"likes":["Egg","Milk"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":22,"name":"Maru","hearts":0,"birthday":"summer10","loves":["Battery Pack","Cauliflower","Cheese Cauliflower","Diamond","Gold Bar","Iridium Bar","Miner's Treat","Pepper Poppers","Rhubarb Pie","Strawberry"],"likes":["Copper Bar","Iron Bar","Oak Resin","Pine Tar","Quartz"],"dislikes":["Holly"],"hates":["Honey","Pickles","Truffle"]},
+  {"id":23,"name":"Pam","hearts":0,"birthday":"spring18","loves":["Beer","Cactus Fruit","Glazed Yams","Mead","Pale Ale","Parsnip","Parsnip Soup"],"likes":["Milk"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":24,"name":"Penny","hearts":0,"birthday":"fall2","loves":["Diamond","Emerald","Melon","Poppy","Poppyseed Muffin","Red Plate","Roots Platter","Sandfish","Tom Kha Soup"],"likes":["Milk","Dandelion","Leek"],"dislikes":["Holly"],"hates":["Beer","Grape","Holly","Hops","Mead","Pale Ale","Pina Colada","Rabbit's Foot","Wine"]},
+  {"id":25,"name":"Pierre","hearts":0,"birthday":"spring26","loves":["Fried Calamari"],"likes":["Egg","Milk"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":26,"name":"Robin","hearts":0,"birthday":"fall21","loves":["Goat Cheese","Peach"],"likes":["Milk"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":27,"name":"Sam","hearts":0,"birthday":"summer17","loves":["Cactus Fruit","Maple Bar","Pizza","Tigerseye"],"likes":["Egg","Joja Cola"],"dislikes":["Holly"],"hates":["Coal","Holly"]},
+  {"id":28,"name":"Sandy","hearts":0,"birthday":"fall15","loves":["Goat Milk","Peach"],"likes":["Coconut"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":29,"name":"Sebastian","hearts":0,"birthday":"winter10","loves":["Frozen Tear","Obsidian","Pumpkin Soup","Sashimi","Void Egg"],"likes":["Coffee","Flounder","Green Tea","Quartz"],"dislikes":["Holly"],"hates":["Clay","Complete Breakfast","Farmer's Lunch","Omelet","Pizza"]},
+  {"id":30,"name":"Shane","hearts":0,"birthday":"spring20","loves":["Beer","Hot Pepper","Pepper Poppers","Pizza"],"likes":["Egg","Milk"],"dislikes":["Holly"],"hates":["Pickles","Quartz"]},
+  {"id":31,"name":"Vincent","hearts":0,"birthday":"spring10","loves":["Cranberry Candy","Grape","Pink Cake"],"likes":["Sweet Pea"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":32,"name":"Willy","hearts":0,"birthday":"summer24","loves":["Catfish","Diamond","Iridium Bar","Mead"],"likes":["Gold Bar"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":33,"name":"Wizard","hearts":0,"birthday":"winter17","loves":["Purple Mushroom","Solar Essence","Super Cucumber"],"likes":["Quartz"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":34,"name":"Leo","hearts":0,"birthday":"summer26","loves":["Duck Feather","Mango","Ostrich Egg"],"likes":["Coconut"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":35,"name":"Birdie","hearts":0,"birthday":"spring1","loves":["Pufferfish"],"likes":["Golden Walnut"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":36,"name":"Professor Snail","hearts":0,"birthday":"fall1","loves":["Large Goat Milk","Banana"],"likes":["Golden Coconut"],"dislikes":["Holly"],"hates":["Holly"]},
+  {"id":37,"name":"Ginger Island Trader","hearts":0,"birthday":"summer1","loves":["Golden Walnut"],"likes":["Banana"],"dislikes":["Holly"],"hates":["Holly"]}
 ]
