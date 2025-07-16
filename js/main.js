@@ -302,12 +302,27 @@ function renderVillagerList() {
             <h3 class="pixel-font text-sm text-center">${villager.name}</h3>
             <div class="flex mt-2">
                 ${Array(10).fill().map((_, i) =>
-                    `<div class="w-4 h-4 mx-px ${i < villager.hearts ? 'bg-[#e7717d]' : 'bg-gray-300'} pixel-border"></div>`
+                    `<img src="images/heart.png" class="w-4 h-4 mx-px ${i < villager.hearts ? '' : 'grayscale'}" />`
                 ).join('')}
             </div>
         `;
 
         villagerCard.addEventListener('click', () => {
+            if (villager.hearts < 10) {
+                villager.hearts++;
+                renderVillagerList();
+            }
+        });
+
+        villagerCard.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            if (villager.hearts > 0) {
+                villager.hearts--;
+                renderVillagerList();
+            }
+        });
+
+        villagerCard.addEventListener('dblclick', () => {
             showVillagerDetail(villager.id);
         });
 
@@ -320,8 +335,8 @@ function showVillagerDetail(villagerId) {
     const villagerDetail = document.getElementById('villager-detail');
 
     // Set villager data
+    document.getElementById('villager-img').src = `images/villagers/${villager.name}.png`;
     document.getElementById('villager-name').textContent = villager.name;
-    document.getElementById('villager-hearts').textContent = `${villager.hearts} hearts`;
 
     // Set gift preferences
     const setGiftList = (listId, items) => {
