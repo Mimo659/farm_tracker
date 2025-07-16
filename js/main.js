@@ -375,29 +375,6 @@ if (showPlannerBtn) {
             planner.classList.remove('hidden');
             cropList.classList.add('hidden');
             renderPlannerGrid();
-        } else {
-            planner.classList.add('hidden');
-            cropList.classList.remove('hidden');
-        }
-    });
-}
-
-function renderPlannerGrid() {
-    const grid = document.getElementById('planner-grid');
-    grid.innerHTML = '';
-
-    // Create 7x7 grid (49 tiles)
-    for (let i = 0; i < 49; i++) {
-        const tile = document.createElement('div');
-        tile.className = 'aspect-square bg-gray-100 border border-gray-300 cursor-pointer';
-        tile.addEventListener('click', () => {
-            tile.classList.toggle('bg-green-300');
-        });
-        grid.appendChild(tile);
-    }
-}
-
-            renderPlannerGrid();
 
             // Add event listeners now that the planner is visible
             document.getElementById('clear-planner').addEventListener('click', () => {
@@ -424,6 +401,21 @@ function renderPlannerGrid() {
             cropList.classList.remove('hidden');
         }
     });
+}
+
+function renderPlannerGrid() {
+    const grid = document.getElementById('planner-grid');
+    grid.innerHTML = '';
+
+    // Create 7x7 grid (49 tiles)
+    for (let i = 0; i < 49; i++) {
+        const tile = document.createElement('div');
+        tile.className = 'aspect-square bg-gray-100 border border-gray-300 cursor-pointer';
+        tile.addEventListener('click', () => {
+            tile.classList.toggle('bg-green-300');
+        });
+        grid.appendChild(tile);
+    }
 }
 
 // Quests Tab
