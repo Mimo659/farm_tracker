@@ -131,6 +131,7 @@
             <button data-tab="farming" class="pixel-button pixel-font px-4 py-2 bg-[#5b8c5a] text-white pixel-border">Farming</button>
             <button data-tab="villagers" class="pixel-button pixel-font px-4 py-2 bg-[#5b8c5a] text-white pixel-border">Villagers</button>
             <button data-tab="quests" class="pixel-button pixel-font px-4 py-2 bg-[#5b8c5a] text-white pixel-border">Quests</button>
+            <button data-tab="museum" class="pixel-button pixel-font px-4 py-2 bg-[#5b8c5a] text-white pixel-border">Museum</button>
         </div>
         
         <!-- Main Content Area -->
@@ -140,9 +141,7 @@
                 <div class="mb-6">
                     <h2 class="pixel-font text-2xl mb-4 text-[#2d3047]">Item Collection</h2>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <button data-category="all" class="pixel-button pixel-font px-3 py-1 bg-[#e7717d] text-white pixel-border text-sm">All Items</button>
                         <button data-category="minerals" class="pixel-button pixel-font px-3 py-1 bg-[#e7717d] text-white pixel-border text-sm">Minerals</button>
-                        <button data-category="artifacts" class="pixel-button pixel-font px-3 py-1 bg-[#e7717d] text-white pixel-border text-sm">Artifacts</button>
                         <button data-category="fish" class="pixel-button pixel-font px-3 py-1 bg-[#e7717d] text-white pixel-border text-sm">Fish</button>
                     </div>
                 </div>
@@ -266,6 +265,17 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="achievement-list">
                         <!-- Achievements will be populated by JavaScript -->
                     </div>
+                </div>
+            </div>
+
+            <!-- Museum Tab -->
+            <div id="museum-tab" class="tab-content hidden">
+                <div class="mb-6">
+                    <h2 class="pixel-font text-2xl mb-4 text-[#2d3047]">Museum Collection</h2>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4" id="museum-items">
+                    <!-- Museum items will be populated by JavaScript -->
                 </div>
             </div>
         </main>
