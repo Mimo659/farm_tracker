@@ -301,13 +301,12 @@ function renderVillagerList() {
             <img src="images/villagers/${villager.name}.png" alt="${villager.name}" class="w-16 h-16 object-cover mb-2 pixel-border villager-face">
             <h3 class="pixel-font text-sm text-center">${villager.name}</h3>
             <div class="flex mt-2 items-center">
-                <img src="images/heart.png" class="w-4 h-4 mx-px" />
-                <span class="ml-1">${villager.hearts}</span>
+                <img src="images/hearts/${villager.hearts}_hearts.png" class="w-auto h-4 mx-px" />
             </div>
         `;
 
         villagerCard.addEventListener('click', () => {
-            if (villager.hearts < 10) {
+            if (villager.hearts < 14) {
                 villager.hearts++;
                 renderVillagerList();
             }
@@ -336,6 +335,7 @@ function showVillagerDetail(villagerId) {
     // Set villager data
     document.getElementById('villager-img').src = `images/villagers/${villager.name}.png`;
     document.getElementById('villager-name').textContent = villager.name;
+    document.getElementById('villager-hearts').innerHTML = `<img src="images/hearts/${villager.hearts}_hearts.png" class="w-auto h-4 mx-px" />`;
 
     // Set gift preferences
     const setGiftList = (listId, items) => {
