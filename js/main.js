@@ -365,19 +365,22 @@ function showVillagerDetail(villagerId) {
 }
 
 // Crop Planner Functionality
-document.getElementById('show-planner').addEventListener('click', () => {
-    const planner = document.getElementById('crop-planner');
-    const cropList = document.getElementById('crop-list');
+const showPlannerBtn = document.getElementById('show-planner');
+if (showPlannerBtn) {
+    showPlannerBtn.addEventListener('click', () => {
+        const planner = document.getElementById('crop-planner');
+        const cropList = document.getElementById('crop-list');
 
-    if (planner.classList.contains('hidden')) {
-        planner.classList.remove('hidden');
-        cropList.classList.add('hidden');
-        renderPlannerGrid();
-    } else {
-        planner.classList.add('hidden');
-        cropList.classList.remove('hidden');
-    }
-});
+        if (planner.classList.contains('hidden')) {
+            planner.classList.remove('hidden');
+            cropList.classList.add('hidden');
+            renderPlannerGrid();
+        } else {
+            planner.classList.add('hidden');
+            cropList.classList.remove('hidden');
+        }
+    });
+}
 
 function renderPlannerGrid() {
     const grid = document.getElementById('planner-grid');
