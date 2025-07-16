@@ -30,7 +30,6 @@ let currentLang = 'en';
 let gameData;
 
 // DOM Elements
-const welcomeText = document.getElementById('welcome-text');
 const langEnBtn = document.getElementById('lang-en');
 const langDeBtn = document.getElementById('lang-de');
 const tabButtons = document.querySelectorAll('[data-tab]');
@@ -59,9 +58,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderCrops(gameData.farmInfo.season);
     });
 
-    // Set up language buttons
-    langEnBtn.addEventListener('click', () => setLanguage('en'));
-    langDeBtn.addEventListener('click', () => setLanguage('de'));
 
     // Set up tab navigation
     tabButtons.forEach(button => {
@@ -78,8 +74,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     loadQuestsTab();
     loadMuseumTab();
 
-    // Set default language after data is loaded
-    setLanguage('en');
 
     // Tab functionality
     const tabButtons = document.querySelectorAll('.tab-btn');
@@ -159,52 +153,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 });
 
-// Language switching
-function setLanguage(lang) {
-    currentLang = lang;
-
-    // Update UI text
-    welcomeText.textContent = gameData[lang].welcome;
-
-    // Update tab buttons
-    tabButtons.forEach(button => {
-        const tabKey = button.getAttribute('data-tab');
-        button.textContent = gameData[lang].tabs[tabKey];
-    });
-
-    // Update category buttons
-    document.querySelectorAll('[data-category]').forEach(button => {
-        const category = button.getAttribute('data-category');
-        button.textContent = gameData[lang].categories[category];
-    });
-
-    // Update farming section
-    document.getElementById('add-crop').textContent = gameData[lang].farming.addCrop;
-
-    // Update villagers section
-    const villagerDetail = document.getElementById('villager-detail');
-    if (!villagerDetail.classList.contains('hidden')) {
-        const activeVillagerId = villagerDetail.getAttribute('data-villager-id');
-        showVillagerDetail(parseInt(activeVillagerId));
-    }
-
-    // Update active tab
-    const activeTab = document.querySelector('.tab-active').getAttribute('data-tab');
-    switchTab(activeTab);
-
-    // Update language buttons
-    if (lang === 'en') {
-        langEnBtn.classList.add('bg-[#5b8c5a]', 'text-white');
-        langEnBtn.classList.remove('bg-gray-300', 'text-gray-700');
-        langDeBtn.classList.add('bg-gray-300', 'text-gray-700');
-        langDeBtn.classList.remove('bg-[#5b8c5a]', 'text-white');
-    } else {
-        langDeBtn.classList.add('bg-[#5b8c5a]', 'text-white');
-        langDeBtn.classList.remove('bg-gray-300', 'text-gray-700');
-        langEnBtn.classList.add('bg-gray-300', 'text-gray-700');
-        langEnBtn.classList.remove('bg-[#5b8c5a]', 'text-white');
-    }
-}
 
 // Tab switching
 function switchTab(tabId) {
