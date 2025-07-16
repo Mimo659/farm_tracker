@@ -397,25 +397,34 @@ function renderPlannerGrid() {
     }
 }
 
-document.getElementById('clear-planner').addEventListener('click', () => {
-    const tiles = document.querySelectorAll('#planner-grid > div');
-    tiles.forEach(tile => {
-        tile.classList.remove('bg-green-300');
+            renderPlannerGrid();
+
+            // Add event listeners now that the planner is visible
+            document.getElementById('clear-planner').addEventListener('click', () => {
+                const tiles = document.querySelectorAll('#planner-grid > div');
+                tiles.forEach(tile => {
+                    tile.classList.remove('bg-green-300');
+                });
+            });
+
+            document.getElementById('save-plan').addEventListener('click', () => {
+                const crop = document.getElementById('planner-crop').value;
+                const count = parseInt(document.getElementById('planner-count').value);
+                const season = document.getElementById('planner-season').value;
+
+                // In a real app, you would save this plan to your data structure
+                alert(`Saved plan for ${count} ${crop} plants in ${season}!`);
+
+                // Switch back to crop list view
+                document.getElementById('crop-planner').classList.add('hidden');
+                document.getElementById('crop-list').classList.remove('hidden');
+            });
+        } else {
+            planner.classList.add('hidden');
+            cropList.classList.remove('hidden');
+        }
     });
-});
-
-document.getElementById('save-plan').addEventListener('click', () => {
-    const crop = document.getElementById('planner-crop').value;
-    const count = parseInt(document.getElementById('planner-count').value);
-    const season = document.getElementById('planner-season').value;
-
-    // In a real app, you would save this plan to your data structure
-    alert(`Saved plan for ${count} ${crop} plants in ${season}!`);
-
-    // Switch back to crop list view
-    document.getElementById('crop-planner').classList.add('hidden');
-    document.getElementById('crop-list').classList.remove('hidden');
-});
+}
 
 // Quests Tab
 function loadQuestsTab() {
