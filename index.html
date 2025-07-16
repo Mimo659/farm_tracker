@@ -4,308 +4,256 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stardew Valley Tracker</title>
-    <link rel="icon" type="image/png" href="images/heart.png">
-    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-        
-        :root {
-            --primary: #5b8c5a;
-            --secondary: #e9b872;
-            --accent: #e7717d;
-            --dark: #2d3047;
-            --light: #f8f4e3;
-        }
-        
-        body {
-            font-family: 'Courier New', monospace;
-            background-color: var(--light);
-            color: var(--dark);
-        }
-        
-        .pixel-font {
-            font-family: 'Press Start 2P', cursive;
-        }
-        
-        .pixel-border {
-            border: 4px solid var(--dark);
-            box-shadow: 8px 8px 0 var(--dark);
-        }
-        
-        .pixel-button {
-            transition: all 0.1s;
-        }
-        
-        .pixel-button:active {
-            transform: translate(2px, 2px);
-            box-shadow: 4px 4px 0 var(--dark);
-        }
-        
-        .tab-active {
-            background-color: var(--secondary);
-            color: var(--dark);
-            font-weight: bold;
-        }
-        
-        .season-spring { background-color: #a7d489; }
-        .season-summer { background-color: #f1c86a; }
-        .season-fall { background-color: #ea9e70; }
-        .season-winter { background-color: #a0c8e0; }
-        
-        .item-card {
-            transition: all 0.2s;
-        }
-        
-        .item-card:hover {
-            transform: scale(1.05);
-            z-index: 10;
-        }
-        
-        .villager-face {
-            image-rendering: pixelated;
-        }
-
-        .grayscale {
-            filter: grayscale(100%);
-        }
-        
-        #planner-grid > div {
-            transition: background-color 0.2s;
-        }
-        
-        #planner-grid > div:hover {
-            background-color: #e2e8f0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="min-h-screen bg-[#f8f4e3]">
-    <!-- Landing Page Modal -->
-    <div id="landing-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-        <div class="bg-white p-6 pixel-border w-full max-w-md">
-            <h3 class="pixel-font text-xl mb-4">Set Up Your Farm</h3>
-            <div class="space-y-4">
+<body class="bg-green-50 font-sans">
+    <!-- Header -->
+    <header class="bg-green-700 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-leaf text-3xl mr-3"></i>
+                    <h1 class="text-3xl font-bold">Stardew Valley Tracker</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-green-600 hover:bg-green-500 px-4 py-2 rounded-lg flex items-center">
+                        <i class="fas fa-language mr-2"></i>
+                        <span>English</span>
+                    </button>
+                    <button class="bg-green-600 hover:bg-green-500 px-4 py-2 rounded-lg">
+                        <i class="fas fa-save"></i>
+                    </button>
+                </div>
+            </div>
+            <p class="text-green-100 mt-2 text-center md:text-left">Track your farm progress offline!</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-6">
+        <!-- Setup Section -->
+        <section id="setup" class="bg-white rounded-xl shadow-md p-6 mb-8">
+            <h2 class="text-2xl font-bold text-green-800 mb-4">Set Up Your Farm</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                    <label class="block mb-1">Farm Name</label>
-                    <input type="text" id="farm-name" class="w-full px-3 py-2 border-2 border-[#2d3047]">
+                    <label class="block text-gray-700 mb-2">Farm Name</label>
+                    <input type="text" id="farm-name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Happy Farm">
                 </div>
                 <div>
-                    <label class="block mb-1">Your Name</label>
-                    <input type="text" id="player-name" class="w-full px-3 py-2 border-2 border-[#2d3047]">
+                    <label class="block text-gray-700 mb-2">Your Name</label>
+                    <input type="text" id="player-name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Farmer">
                 </div>
                 <div>
-                    <label class="block mb-1">Current Season</label>
-                    <select id="current-season" class="w-full px-3 py-2 border-2 border-[#2d3047]">
-                        <option value="spring">Spring</option>
-                        <option value="summer">Summer</option>
-                        <option value="fall">Fall</option>
-                        <option value="winter">Winter</option>
+                    <label class="block text-gray-700 mb-2">Current Season</label>
+                    <select id="current-season" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        <option>Spring</option>
+                        <option>Summer</option>
+                        <option>Fall</option>
+                        <option>Winter</option>
                     </select>
                 </div>
                 <div>
-                    <label class="block mb-1">Current Year</label>
-                    <input type="number" id="current-year" min="1" value="1" class="w-full px-3 py-2 border-2 border-[#2d3047]">
-                </div>
-                <div class="flex justify-end gap-2">
-                    <button id="save-farm" class="pixel-button pixel-font px-4 py-2 bg-[#5b8c5a] text-white pixel-border">Start Tracking</button>
+                    <label class="block text-gray-700 mb-2">Current Year</label>
+                    <input type="number" id="current-year" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="1" min="1" value="1">
                 </div>
             </div>
-        </div>
-    </div>
+            <button id="save-farm" class="mt-4 bg-green-600 hover:bg-green-500 text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
+                Start Tracking
+            </button>
+        </section>
 
-    <div id="main-content" class="container mx-auto px-4 py-8 max-w-6xl hidden">
-        <!-- Header -->
-        <header class="mb-8 text-center">
-            <h1 class="pixel-font text-4xl md:text-5xl mb-4 text-[#2d3047]">Stardew Valley Tracker</h1>
-            <div class="flex justify-center items-center gap-4 mb-6">
-                <button id="lang-en" class="pixel-font px-4 py-2 bg-[#5b8c5a] text-white pixel-border">English</button>
-                <button id="lang-de" class="pixel-font px-4 py-2 bg-gray-300 text-gray-700 pixel-border">Deutsch</button>
-            </div>
-            <div class="bg-[#e9b872] p-4 pixel-border">
-                <p class="pixel-font text-lg" id="welcome-text">Track your farm progress offline!</p>
-            </div>
-        </header>
-        
-        <!-- Main Navigation Tabs -->
-        <div class="flex flex-wrap gap-2 mb-8 justify-center">
-            <button data-tab="inventory" class="pixel-button pixel-font px-4 py-2 bg-[#5b8c5a] text-white pixel-border tab-active">Inventory</button>
-            <button data-tab="farming" class="pixel-button pixel-font px-4 py-2 bg-[#5b8c5a] text-white pixel-border">Farming</button>
-            <button data-tab="villagers" class="pixel-button pixel-font px-4 py-2 bg-[#5b8c5a] text-white pixel-border">Villagers</button>
-            <button data-tab="quests" class="pixel-button pixel-font px-4 py-2 bg-[#5b8c5a] text-white pixel-border">Quests</button>
-            <button data-tab="museum" class="pixel-button pixel-font px-4 py-2 bg-[#5b8c5a] text-white pixel-border">Museum</button>
+        <!-- Navigation Tabs -->
+        <div class="flex overflow-x-auto mb-6 border-b border-gray-200">
+            <button class="tab-btn px-6 py-3 font-medium text-gray-600 hover:text-green-700 border-b-2 border-transparent hover:border-green-500 active" data-tab="inventory">
+                <i class="fas fa-box-open mr-2"></i>Inventory
+            </button>
+            <button class="tab-btn px-6 py-3 font-medium text-gray-600 hover:text-green-700 border-b-2 border-transparent hover:border-green-500" data-tab="farming">
+                <i class="fas fa-tractor mr-2"></i>Farming
+            </button>
+            <button class="tab-btn px-6 py-3 font-medium text-gray-600 hover:text-green-700 border-b-2 border-transparent hover:border-green-500" data-tab="villagers">
+                <i class="fas fa-users mr-2"></i>Villagers
+            </button>
+            <button class="tab-btn px-6 py-3 font-medium text-gray-600 hover:text-green-700 border-b-2 border-transparent hover:border-green-500" data-tab="quests">
+                <i class="fas fa-scroll mr-2"></i>Quests
+            </button>
+            <button class="tab-btn px-6 py-3 font-medium text-gray-600 hover:text-green-700 border-b-2 border-transparent hover:border-green-500" data-tab="museum">
+                <i class="fas fa-landmark mr-2"></i>Museum
+            </button>
         </div>
-        
-        <!-- Main Content Area -->
-        <main>
-            <!-- Inventory Tab -->
-            <div id="inventory-tab" class="tab-content">
-                <div class="mb-6">
-                    <h2 class="pixel-font text-2xl mb-4 text-[#2d3047]">Item Collection</h2>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <button data-category="minerals" class="pixel-button pixel-font px-3 py-1 bg-[#e7717d] text-white pixel-border text-sm">Minerals</button>
-                        <button data-category="fish" class="pixel-button pixel-font px-3 py-1 bg-[#e7717d] text-white pixel-border text-sm">Fish</button>
+
+        <!-- Inventory Tab -->
+        <div id="inventory-tab" class="tab-content active">
+            <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+                <h2 class="text-2xl font-bold text-green-800 mb-4">Item Collection</h2>
+
+                <div class="flex mb-6">
+                    <button class="category-btn px-4 py-2 bg-green-600 text-white rounded-l-lg" data-category="minerals">
+                        <i class="fas fa-gem mr-2"></i>Minerals
+                    </button>
+                    <button class="category-btn px-4 py-2 bg-gray-200 text-gray-700 rounded-r-lg" data-category="fish">
+                        <i class="fas fa-fish mr-2"></i>Fish
+                    </button>
+                </div>
+
+                <!-- Minerals Category -->
+                <div id="minerals" class="category-content">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4" id="inventory-items">
+
                     </div>
                 </div>
-                
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4" id="inventory-items">
-                    <!-- Items will be populated by JavaScript -->
+
+                <!-- Fish Category (Hidden by default) -->
+                <div id="fish" class="category-content hidden">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+
+                    </div>
                 </div>
             </div>
-            
-            <!-- Farming Tab -->
-            <div id="farming-tab" class="tab-content hidden">
-                <div class="mb-6">
-                    <h2 class="pixel-font text-2xl mb-4 text-[#2d3047]">Crop Tracker</h2>
-                    <div class="flex gap-4 mb-4">
-                        <select id="season-select" class="pixel-font px-3 py-1 bg-white pixel-border">
-                            <option value="spring">Spring</option>
-                            <option value="summer">Summer</option>
-                            <option value="fall">Fall</option>
-                            <option value="winter">Winter</option>
+        </div>
+
+        <!-- Farming Tab -->
+        <div id="farming-tab" class="tab-content">
+            <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+                <h2 class="text-2xl font-bold text-green-800 mb-4">Crop Tracker</h2>
+
+                <button id="add-crop" class="mb-6 bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-lg">
+                    <i class="fas fa-plus mr-2"></i>Add Crop
+                </button>
+
+                <!-- Crop Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="crop-list">
+                </div>
+
+                <h2 class="text-2xl font-bold text-green-800 mt-8 mb-4">Crop Planner</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Select Crop</label>
+                        <select id="planner-crop" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                            <option>Strawberry</option>
+                            <option>Potato</option>
+                            <option>Blueberry</option>
+                            <option>Cranberry</option>
                         </select>
-                        <button id="add-crop" class="pixel-button pixel-font px-3 py-1 bg-[#e7717d] text-white pixel-border">Add Crop</button>
                     </div>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8" id="crop-list">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Number of Plants</label>
+                        <input type="number" id="planner-count" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="10" min="1">
                     </div>
-                    
-                    <!-- Crop Planner Section -->
-                    <div id="crop-planner" class="hidden">
-                        <h2 class="pixel-font text-2xl mb-4 text-[#2d3047]">Crop Planner</h2>
-                        <div class="mb-4">
-                            <label class="block mb-2">Select Crop:</label>
-                            <select id="planner-crop" class="pixel-font px-3 py-2 bg-white pixel-border w-full">
-                                <option value="strawberry">Strawberry</option>
-                                <option value="blueberry">Blueberry</option>
-                                <option value="cranberry">Cranberry</option>
-                                <option value="potato">Potato</option>
-                                <option value="melon">Melon</option>
-                                <option value="pumpkin">Pumpkin</option>
-                            </select>
-                        </div>
-                        <div class="mb-4">
-                            <label class="block mb-2">Number of Plants:</label>
-                            <input type="number" id="planner-count" min="1" value="1" class="pixel-font px-3 py-2 bg-white pixel-border w-full">
-                        </div>
-                        <div class="mb-4">
-                            <label class="block mb-2">Season:</label>
-                            <select id="planner-season" class="pixel-font px-3 py-2 bg-white pixel-border w.full">
-                                <option value="spring">Spring</option>
-                                <option value="summer">Summer</option>
-                                <option value="fall">Fall</option>
-                            </select>
-                        </div>
-                        <div class="grid grid-cols-7 gap-1 mb-4" id="planner-grid">
-                            <!-- Grid will be populated by JavaScript -->
-                        </div>
-                        <div class="flex justify-between">
-                            <button id="clear-planner" class="pixel-button pixel-font px-4 py-2 bg-[#e7717d] text-white pixel-border">Clear</button>
-                            <button id="save-plan" class="pixel-button pixel-font px-4 py-2 bg-[#5b8c5a] text-white pixel-border">Save Plan</button>
-                        </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Season</label>
+                        <select id="planner-season" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                            <option>Spring</option>
+                            <option>Summer</option>
+                            <option>Fall</option>
+                            <option>Winter</option>
+                        </select>
                     </div>
-                        <!-- Crops will be populated by JavaScript -->
-                    </div>
-                </div>
-                
-            </div>
-            
-            <!-- Villagers Tab -->
-            <div id="villagers-tab" class="tab-content hidden">
-                <div class="mb-6">
-                    <h2 class="pixel-font text-2xl mb-4 text-[#2d3047]">Villager Relationships</h2>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4" id="villager-list">
-                        <!-- Villagers will be populated by JavaScript -->
-                    </div>
-                </div>
-                
-                <div id="villager-detail" class="hidden bg-white p-6 pixel-border">
-                    <div class="flex flex-col md:flex-row gap-6">
-                        <div class="flex-shrink-0">
-                            <img id="villager-img" src="" alt="Villager" class="w-32 h-32 object-cover villager-face pixel-border">
-                            <h3 id="villager-name" class="pixel-font text-xl mt-2 text-center"></h3>
-                            <div class="flex justify-center mt-2">
-                                <span id="villager-hearts" class="pixel-font text-sm"></span>
-                            </div>
-                        </div>
-                        <div class="flex-grow">
-                            <h4 class="pixel-font text-lg mb-2">Gift Preferences</h4>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div>
-                                    <h5 class="font-bold">Loves</h5>
-                                    <ul id="villager-loves" class="list-disc pl-5"></ul>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold">Likes</h5>
-                                    <ul id="villager-likes" class="list-disc pl-5"></ul>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold">Dislikes</h5>
-                                    <ul id="villager-dislikes" class="list-disc pl-5"></ul>
-                                </div>
-                                <div>
-                                    <h5 class="font-bold">Hates</h5>
-                                    <ul id="villager-hates" class="list-disc pl-5"></ul>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="flex items-end">
+                        <button id="clear-planner" class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-lg mr-2">
+                            Clear
+                        </button>
+                        <button id="save-plan" class="bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-lg">
+                            Save Plan
+                        </button>
                     </div>
                 </div>
             </div>
-            
-            <!-- Quests Tab -->
-            <div id="quests-tab" class="tab-content hidden">
-                <div class="mb-6">
-                    <h2 class="pixel-font text-2xl mb-4 text-[#2d3047]">Community Center Bundles</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="bundle-list">
-                        <!-- Bundles will be populated by JavaScript -->
-                    </div>
-                </div>
-                
-                <div class="mt-8">
-                    <h2 class="pixel-font text-2xl mb-4 text-[#2d3047]">Achievements</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="achievement-list">
-                        <!-- Achievements will be populated by JavaScript -->
-                    </div>
-                </div>
-            </div>
+        </div>
 
-            <!-- Museum Tab -->
-            <div id="museum-tab" class="tab-content hidden">
-                <div class="mb-6">
-                    <h2 class="pixel-font text-2xl mb-4 text-[#2d3047]">Museum Collection</h2>
+        <!-- Villagers Tab -->
+        <div id="villagers-tab" class="tab-content">
+            <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+                <h2 class="text-2xl font-bold text-green-800 mb-4">Villager Relationships</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="villager-list">
                 </div>
+            </div>
+        </div>
+
+        <!-- Quests Tab -->
+        <div id="quests-tab" class="tab-content">
+            <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+                <h2 class="text-2xl font-bold text-green-800 mb-4">Community Center Bundles</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="bundle-list">
+                </div>
+                
+                <h2 class="text-2xl font-bold text-green-800 mt-8 mb-4">Achievements</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="achievement-list">
+                </div>
+            </div>
+        </div>
+
+        <!-- Museum Tab -->
+        <div id="museum-tab" class="tab-content">
+            <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+                <h2 class="text-2xl font-bold text-green-800 mb-4">Museum Collection</h2>
 
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4" id="museum-items">
-                    <!-- Museum items will be populated by JavaScript -->
                 </div>
-            </div>
-        </main>
-    </div>
 
-    <!-- Add Crop Modal -->
-    <div id="crop-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
-        <div class="bg-white p-6 pixel-border w-full max-w-md">
-            <h3 class="pixel-font text-xl mb-4">Add New Crop</h3>
-            <div class="space-y-4">
-                <div>
-                    <label class="block mb-1">Crop Name</label>
-                    <input type="text" id="crop-name" class="w-full px-3 py-2 border-2 border-[#2d3047]">
+                <div class="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <h3 class="text-lg font-semibold text-blue-800 mb-2">Collection Progress</h3>
+                    <div class="flex justify-between mb-1">
+                        <span class="text-sm font-medium text-blue-700">Minerals</span>
+                        <span class="text-sm font-medium text-blue-700">12/53</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 23%"></div>
+                    </div>
+
+                    <div class="flex justify-between mb-1 mt-4">
+                        <span class="text-sm font-medium text-blue-700">Artifacts</span>
+                        <span class="text-sm font-medium text-blue-700">5/42</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 12%"></div>
+                    </div>
                 </div>
-                <div>
-                    <label class="block mb-1">Days to Harvest</label>
-                    <input type="number" id="crop-days" class="w-full px-3 py-2 border-2 border-[#2d3047]">
-                </div>
-                <div>
-                    <label class="block mb-1">Quantity</label>
-                    <input type="number" id="crop-quantity" class="w-full px-3 py-2 border-2 border-[#2d3047]">
-                </div>
-                <div class="flex justify-end gap-2">
-                    <button id="cancel-.crop" class="pixel-button pixel-font px-4 py-2 bg-gray-300 text-gray-700 pixel-border">Cancel</button>
-                    <button id="save-crop" class="pixel-button pixel-font px-4 py-2 bg-[#5b8c5a] text-white pixel-border">Save</button>
+
+                <button class="mt-6 bg-green-600 hover:bg-green-500 text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
+                    <i class="fas fa-plus mr-2"></i>Add New Crop
+                </button>
+
+                <!-- Add Crop Modal (Hidden by default) -->
+                <div id="add-crop-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+                    <div class="bg-white rounded-lg p-6 w-full max-w-md">
+                        <h3 class="text-xl font-bold text-green-800 mb-4">Add New Crop</h3>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Crop Name</label>
+                            <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Strawberry">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Days to Harvest</label>
+                            <input type="number" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="8" min="1">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 mb-2">Quantity</label>
+                            <input type="number" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="12" min="1">
+                        </div>
+                        <div class="flex justify-end space-x-3">
+                            <button id="cancel-crop" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300">
+                                Cancel
+                            </button>
+                            <button class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-500">
+                                Save
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>Stardew Valley Tracker © 2025 | Track your farm progress offline!</p>
+            <p class="mt-2 text-green-200">Not affiliated with ConcernedApe or Stardew Valley</p>
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
