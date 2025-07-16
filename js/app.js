@@ -3,6 +3,7 @@ import { renderInventory } from './inventory.js';
 import { renderVillagers } from './villagers.js';
 import { renderBundles }   from './bundles.js';
 import { renderMuseum }    from './museum.js';
+import { renderFish } from './fish.js';
 
 const STORAGE_KEY = 'stardewSave';
 let data;
@@ -43,10 +44,7 @@ function loadDashboard() {
 document.getElementById('save-dash').addEventListener('click', () => {
   data.farmInfo = {
     name:   document.getElementById('dash-farm-name').value.trim(),
-    player: document.getElementById('dash-player').value.trim(),
-    season: document.getElementById('dash-season').value,
-    year:   parseInt(document.getElementById('dash-year').value, 10),
-    money:  parseInt(document.getElementById('dash-money').value, 10),
+    player: document.getElementById('dash-player').value.trim(), 
     layout: document.getElementById('dash-layout').value,
     pet:    document.getElementById('dash-pet').value
   };
@@ -78,6 +76,7 @@ tabs.forEach(btn =>
       case 'villagers': renderVillagers(data); break;
       case 'bundles':   renderBundles(data);   break;
       case 'museum':    renderMuseum(data);    break;
+      case 'fish':      renderFish(data);      break;
     }
   })
 );

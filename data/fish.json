@@ -1,0 +1,22 @@
+[
+  {"id":1,"name":"Pufferfish","season":"summer","location":"Ocean","time":"12 – 4 pm","weather":"Sun","rod":"Any","caught":false,"img":"Pufferfish.png"},
+  {"id":2,"name":"Largemouth Bass","season":"All","location":"Mountain Lake","time":"6 am – 7 pm","weather":"Any","rod":"Any","caught":false,"img":"Largemouth_Bass.png"},
+  {"id":3,"name":"Catfish","season":"Spring / Rain","location":"River","time":"6 am – 12 am","weather":"Rain","rod":"Any","caught":false,"img":"Catfish.png"},
+  {"id":4,"name":"Trout","season":"All","location":"River","time":"6 am – 7 pm","weather":"Any","rod":"Any","caught":false,"img":"Trout.png"},
+  {"id":5,"name":"Tiger Trout","season":"Fall / Winter","location":"River","time":"6 am – 7 pm","weather":"Any","rod":"Any","caught":false,"img":"Tiger_Trout.png"},
+  {"id":6,"name":"Walleye","season":"Fall / Winter","location":"River / Forest Pond","time":"12 pm – 2 am","weather":"Rain","rod":"Any","caught":false,"img":"Walleye.png"},
+  {"id":7,"name":"Sturgeon","season":"Summer / Winter","location":"Mountain Lake","time":"6 am – 7 pm","weather":"Any","rod":"Any","caught":false,"img":"Sturgeon.png"},
+  {"id":8,"name":"Squid","season":"Winter","location":"Ocean","time":"6 pm – 2 am","weather":"Any","rod":"Any","caught":false,"img":"Squid.png"},
+  {"id":9,"name":"Octopus","season":"Summer","location":"Ocean","time":"6 am – 1 pm","weather":"Any","rod":"Any","caught":false,"img":"Octopus.png"},
+  {"id":10,"name":"Sea Cucumber","season":"Fall / Winter","location":"Ocean","time":"6 am – 7 pm","weather":"Any","rod":"Any","caught":false,"img":"Sea_Cucumber.png"},
+  {"id":11,"name":"Super Cucumber","season":"Summer / Fall","location":"Ocean","time":"6 pm – 2 am","weather":"Any","rod":"Any","caught":false,"img":"Super_Cucumber.png"},
+  {"id":12,"name":"Ghostfish","season":"All","location":"Mines 20, 60","time":"Any","weather":"Any","rod":"Any","caught":false,"img":"Ghostfish.png"},
+  {"id":13,"name":"Stonefish","season":"All","location":"Mines 20","time":"Any","weather":"Any","rod":"Any","caught":false,"img":"Stonefish.png"},
+  {"id":14,"name":"Ice Pip","season":"All","location":"Mines 60","time":"Any","weather":"Any","rod":"Any","caught":false,"img":"Ice_Pip.png"},
+  {"id":15,"name":"Lava Eel","season":"All","location":"Mines 100","time":"Any","weather":"Any","rod":"Any","caught":false,"img":"Lava_Eel.png"},
+  {"id":16,"name":"Crimsonfish","season":"Summer","location":"East Pier (Legendary)","time":"6 am – 10 pm","weather":"Any","rod":"Any","caught":false,"img":"Crimsonfish.png"},
+  {"id":17,"name":"Angler","season":"Fall","location":"North of Joja (Legendary)","time":"Any","weather":"Any","rod":"Any","caught":false,"img":"Angler.png"},
+  {"id":18,"name":"Legend","season":"Spring","location":"Mountain Lake (Legendary)","time":"6 am – 10 pm","weather":"Rain","rod":"Any","caught":false,"img":"Legend.png"},
+  {"id":19,"name":"Glacierfish","season":"Winter","location":"Cindersap Forest Island (Legendary)","time":"6 am – 10 pm","weather":"Any","rod":"Any","caught":false,"img":"Glacierfish.png"},
+  {"id":20,"name":"Mutant Carp","season":"All","location":"Sewers (Legendary)","time":"Any","weather":"Any","rod":"Any","caught":false,"img":"Mutant_Carp.png"}
+]
