@@ -176,7 +176,7 @@ function renderInventoryItems(category) {
         const itemCard = document.createElement('div');
         itemCard.className = `item-card bg-white p-4 pixel-border flex flex-col items-center cursor-pointer ${item.collected ? 'opacity-50' : ''}`;
         itemCard.innerHTML = `
-            <img src="https://raw.githubusercontent.com/OstadTahmasb/Stardew_Valley_Images/main/Items/${item.img}" alt="${item.name}" class="w-16 h-16 object-contain mb-2 pixel-border villager-face">
+            <img src="images/items/${item.img}" alt="${item.name}" class="w-16 h-16 object-contain mb-2 pixel-border villager-face">
             <h3 class="pixel-font text-sm text-center">${item.name}</h3>
             <button class="pixel-button mt-2 pixel-font px-2 py-1 text-xs ${item.collected ? 'bg-gray-400' : 'bg-[#5b8c5a]'} text-white pixel-border">
                 ${item.collected ? 'Collected' : 'Mark Collected'}
@@ -298,7 +298,7 @@ function renderVillagerList() {
         const villagerCard = document.createElement('div');
         villagerCard.className = 'item-card bg-white p-4 pixel-border flex flex-col items-center cursor-pointer';
         villagerCard.innerHTML = `
-            <img src="https://raw.githubusercontent.com/OstadTahmasb/Stardew_Valley_Images/main/Villagers/${villager.name}.png" alt="${villager.name}" class="w-16 h-16 object-cover mb-2 pixel-border villager-face">
+            <img src="images/villagers/${villager.name}.png" alt="${villager.name}" class="w-16 h-16 object-cover mb-2 pixel-border villager-face">
             <h3 class="pixel-font text-sm text-center">${villager.name}</h3>
             <div class="flex mt-2">
                 ${Array(10).fill().map((_, i) =>
