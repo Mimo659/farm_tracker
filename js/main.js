@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     loadQuestsTab();
     loadMuseumTab();
 
-    // Set default language
+    // Set default language after data is loaded
     setLanguage('en');
 });
 
