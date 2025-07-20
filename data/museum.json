@@ -1,97 +1,762 @@
 [
-  {"id":1,"name":"Amphibian Fossil","category":"artifact","collected":false,"img":"Amphibian_Fossil.png"},
-  {"id":2,"name":"Anchor","category":"artifact","collected":false,"img":"Anchor.png"},
-  {"id":3,"name":"Ancient Doll","category":"artifact","collected":false,"img":"Ancient_Doll.png"},
-  {"id":4,"name":"Ancient Drum","category":"artifact","collected":false,"img":"Ancient_Drum.png"},
-  {"id":5,"name":"Ancient Seed","category":"artifact","collected":false,"img":"Ancient_Seed.png"},
-  {"id":6,"name":"Ancient Sword","category":"artifact","collected":false,"img":"Ancient_Sword.png"},
-  {"id":7,"name":"Arrowhead","category":"artifact","collected":false,"img":"Arrowhead.png"},
-  {"id":8,"name":"Bone Flute","category":"artifact","collected":false,"img":"Bone_Flute.png"},
-  {"id":9,"name":"Chewing Stick","category":"artifact","collected":false,"img":"Chewing_Stick.png"},
-  {"id":10,"name":"Chicken Statue","category":"artifact","collected":false,"img":"Chicken_Statue.png"},
-  {"id":11,"name":"Chipped Amphora","category":"artifact","collected":false,"img":"Chipped_Amphora.png"},
-  {"id":12,"name":"Dinosaur Egg","category":"artifact","collected":false,"img":"Dinosaur_Egg.png"},
-  {"id":13,"name":"Dried Starfish","category":"artifact","collected":false,"img":"Dried_Starfish.png"},
-  {"id":14,"name":"Dwarf Gadget","category":"artifact","collected":false,"img":"Dwarf_Gadget.png"},
-  {"id":15,"name":"Dwarf Scroll I","category":"artifact","collected":false,"img":"Dwarf_Scroll_I.png"},
-  {"id":16,"name":"Dwarf Scroll II","category":"artifact","collected":false,"img":"Dwarf_Scroll_II.png"},
-  {"id":17,"name":"Dwarf Scroll III","category":"artifact","collected":false,"img":"Dwarf_Scroll_III.png"},
-  {"id":18,"name":"Dwarf Scroll IV","category":"artifact","collected":false,"img":"Dwarf_Scroll_IV.png"},
-  {"id":19,"name":"Dwarvish Helm","category":"artifact","collected":false,"img":"Dwarvish_Helm.png"},
-  {"id":20,"name":"Elvish Jewelry","category":"artifact","collected":false,"img":"Elvish_Jewelry.png"},
-  {"id":21,"name":"Glass Shards","category":"artifact","collected":false,"img":"Glass_Shards.png"},
-  {"id":22,"name":"Golden Mask","category":"artifact","collected":false,"img":"Golden_Mask.png"},
-  {"id":23,"name":"Golden Relic","category":"artifact","collected":false,"img":"Golden_Relic.png"},
-  {"id":24,"name":"Nautilus Fossil","category":"artifact","collected":false,"img":"Nautilus_Fossil.png"},
-  {"id":25,"name":"Ornamental Fan","category":"artifact","collected":false,"img":"Ornamental_Fan.png"},
-  {"id":26,"name":"Palm Fossil","category":"artifact","collected":false,"img":"Palm_Fossil.png"},
-  {"id":27,"name":"Prehistoric Handaxe","category":"artifact","collected":false,"img":"Prehistoric_Handaxe.png"},
-  {"id":28,"name":"Prehistoric Rib","category":"artifact","collected":false,"img":"Prehistoric_Rib.png"},
-  {"id":29,"name":"Prehistoric Scapula","category":"artifact","collected":false,"img":"Prehistoric_Scapula.png"},
-  {"id":30,"name":"Prehistoric Skull","category":"artifact","collected":false,"img":"Prehistoric_Skull.png"},
-  {"id":31,"name":"Prehistoric Tibia","category":"artifact","collected":false,"img":"Prehistoric_Tibia.png"},
-  {"id":32,"name":"Prehistoric Tool","category":"artifact","collected":false,"img":"Prehistoric_Tool.png"},
-  {"id":33,"name":"Prehistoric Vertebra","category":"artifact","collected":false,"img":"Prehistoric_Vertebra.png"},
-  {"id":34,"name":"Rare Disc","category":"artifact","collected":false,"img":"Rare_Disc.png"},
-  {"id":35,"name":"Rusty Cog","category":"artifact","collected":false,"img":"Rusty_Cog.png"},
-  {"id":36,"name":"Rusty Spoon","category":"artifact","collected":false,"img":"Rusty_Spoon.png"},
-  {"id":37,"name":"Rusty Spur","category":"artifact","collected":false,"img":"Rusty_Spur.png"},
-  {"id":38,"name":"Skeletal Hand","category":"artifact","collected":false,"img":"Skeletal_Hand.png"},
-  {"id":39,"name":"Skeletal Tail","category":"artifact","collected":false,"img":"Skeletal_Tail.png"},
-  {"id":40,"name":"Strange Doll (green)","category":"artifact","collected":false,"img":"Strange_Doll_(green).png"},
-  {"id":41,"name":"Strange Doll","category":"artifact","collected":false,"img":"Strange_Doll.png"},
-  {"id":42,"name":"Trilobite","category":"artifact","collected":false,"img":"Trilobite.png"},
-  {"id":43,"name":"Alamite","category":"mineral","collected":false,"img":"Alamite.png"},
-  {"id":44,"name":"Amethyst","category":"mineral","collected":false,"img":"Amethyst.png"},
-  {"id":45,"name":"Aquamarine","category":"mineral","collected":false,"img":"Aquamarine.png"},
-  {"id":46,"name":"Baryte","category":"mineral","collected":false,"img":"Baryte.png"},
-  {"id":47,"name":"Basalt","category":"mineral","collected":false,"img":"Basalt.png"},
-  {"id":48,"name":"Bixite","category":"mineral","collected":false,"img":"Bixite.png"},
-  {"id":49,"name":"Calcite","category":"mineral","collected":false,"img":"Calcite.png"},
-  {"id":50,"name":"Celestine","category":"mineral","collected":false,"img":"Celestine.png"},
-  {"id":51,"name":"Diamond","category":"mineral","collected":false,"img":"Diamond.png"},
-  {"id":52,"name":"Dolomite","category":"mineral","collected":false,"img":"Dolomite.png"},
-  {"id":53,"name":"Earth Crystal","category":"mineral","collected":false,"img":"Earth_Crystal.png"},
-  {"id":54,"name":"Emerald","category":"mineral","collected":false,"img":"Emerald.png"},
-  {"id":55,"name":"Esperite","category":"mineral","collected":false,"img":"Esperite.png"},
-  {"id":56,"name":"Fairy Stone","category":"mineral","collected":false,"img":"Fairy_Stone.png"},
-  {"id":57,"name":"Fire Opal","category":"mineral","collected":false,"img":"Fire_Opal.png"},
-  {"id":58,"name":"Fire Quartz","category":"mineral","collected":false,"img":"Fire_Quartz.png"},
-  {"id":59,"name":"Fluorapatite","category":"mineral","collected":false,"img":"Fluorapatite.png"},
-  {"id":60,"name":"Frozen Tear","category":"mineral","collected":false,"img":"Frozen_Tear.png"},
-  {"id":61,"name":"Geminite","category":"mineral","collected":false,"img":"Geminite.png"},
-  {"id":62,"name":"Ghost Crystal","category":"mineral","collected":false,"img":"Ghost_Crystal.png"},
-  {"id":63,"name":"Granite","category":"mineral","collected":false,"img":"Granite.png"},
-  {"id":64,"name":"Helvite","category":"mineral","collected":false,"img":"Helvite.png"},
-  {"id":65,"name":"Hematite","category":"mineral","collected":false,"img":"Hematite.png"},
-  {"id":66,"name":"Jade","category":"mineral","collected":false,"img":"Jade.png"},
-  {"id":67,"name":"Jagoite","category":"mineral","collected":false,"img":"Jagoite.png"},
-  {"id":68,"name":"Jamborite","category":"mineral","collected":false,"img":"Jamborite.png"},
-  {"id":69,"name":"Jasper","category":"mineral","collected":false,"img":"Jasper.png"},
-  {"id":70,"name":"Kyanite","category":"mineral","collected":false,"img":"Kyanite.png"},
-  {"id":71,"name":"Lemon Stone","category":"mineral","collected":false,"img":"Lemon_Stone.png"},
-  {"id":72,"name":"Limestone","category":"mineral","collected":false,"img":"Limestone.png"},
-  {"id":73,"name":"Lunarite","category":"mineral","collected":false,"img":"Lunarite.png"},
-  {"id":74,"name":"Malachite","category":"mineral","collected":false,"img":"Malachite.png"},
-  {"id":75,"name":"Marble","category":"mineral","collected":false,"img":"Marble.png"},
-  {"id":76,"name":"Mudstone","category":"mineral","collected":false,"img":"Mudstone.png"},
-  {"id":77,"name":"Nekoite","category":"mineral","collected":false,"img":"Nekoite.png"},
-  {"id":78,"name":"Neptunite","category":"mineral","collected":false,"img":"Neptunite.png"},
-  {"id":79,"name":"Obsidian","category":"mineral","collected":false,"img":"Obsidian.png"},
-  {"id":80,"name":"Ocean Stone","category":"mineral","collected":false,"img":"Ocean_Stone.png"},
-  {"id":81,"name":"Opal","category":"mineral","collected":false,"img":"Opal.png"},
-  {"id":82,"name":"Orpiment","category":"mineral","collected":false,"img":"Orpiment.png"},
-  {"id":83,"name":"Petrified Slime","category":"mineral","collected":false,"img":"Petrified_Slime.png"},
-  {"id":84,"name":"Prismatic Shard","category":"mineral","collected":false,"img":"Prismatic_Shard.png"},
-  {"id":85,"name":"Pyrite","category":"mineral","collected":false,"img":"Pyrite.png"},
-  {"id":86,"name":"Quartz","category":"mineral","collected":false,"img":"Quartz.png"},
-  {"id":87,"name":"Ruby","category":"mineral","collected":false,"img":"Ruby.png"},
-  {"id":88,"name":"Sandstone","category":"mineral","collected":false,"img":"Sandstone.png"},
-  {"id":89,"name":"Slate","category":"mineral","collected":false,"img":"Slate.png"},
-  {"id":90,"name":"Soapstone","category":"mineral","collected":false,"img":"Soapstone.png"},
-  {"id":91,"name":"Star Shards","category":"mineral","collected":false,"img":"Star_Shards.png"},
-  {"id":92,"name":"Thunder Egg","category":"mineral","collected":false,"img":"Thunder_Egg.png"},
-  {"id":93,"name":"Tigerseye","category":"mineral","collected":false,"img":"Tigerseye.png"},
-  {"id":94,"name":"Topaz","category":"mineral","collected":false,"img":"Topaz.png"},
-  {"id":95,"name":"Aerinite","category":"mineral","collected":false,"img":"Aerinite.png"}
+  {
+    "id": 1,
+    "name": "Amphibian Fossil",
+    "category": "artifact",
+    "collected": false,
+    "img": "Amphibian_Fossil.png",
+    "location": "Artifact Spots in Cindersap Forest or the Mountains, Bone Nodes on Ginger Island, Fishing Treasure Chests. [3, 13]"
+  },
+  {
+    "id": 2,
+    "name": "Anchor",
+    "category": "artifact",
+    "collected": false,
+    "img": "Anchor.png",
+    "location": "Artifact Spots at the Beach, Fishing Treasure Chests. [3, 18]"
+  },
+  {
+    "id": 3,
+    "name": "Ancient Doll",
+    "category": "artifact",
+    "collected": false,
+    "img": "Ancient_Doll.png",
+    "location": "Artifact Spots in the Mountains, Cindersap Forest, Pelican Town, or the Bus Stop, Fishing Treasure Chests, Artifact Troves, Geodes, Omni Geodes. [3, 16, 18]"
+  },
+  {
+    "id": 4,
+    "name": "Ancient Drum",
+    "category": "artifact",
+    "collected": false,
+    "img": "Ancient_Drum.png",
+    "location": "Frozen Geodes, Omni Geodes, Artifact Troves, or digging at the Bus Stop, in Cindersap Forest, or Pelican Town. [3, 10, 18]"
+  },
+  {
+    "id": 5,
+    "name": "Ancient Seed",
+    "category": "artifact",
+    "collected": false,
+    "img": "Ancient_Seed.png",
+    "location": "Artifact Spots in Cindersap Forest or the Mountains, dropped by Bugs, Grubs, Cave Flies, and Mutant Flies, or found in Fishing Treasure Chests and Artifact Troves. [3, 18]"
+  },
+  {
+    "id": 6,
+    "name": "Ancient Sword",
+    "category": "artifact",
+    "collected": false,
+    "img": "Ancient_Sword.png",
+    "location": "Artifact Spots in Cindersap Forest or the Mountains, Fishing Treasure Chests, Artifact Troves. [3, 18]"
+  },
+  {
+    "id": 7,
+    "name": "Arrowhead",
+    "category": "artifact",
+    "collected": false,
+    "img": "Arrowhead.png",
+    "location": "Artifact Spots in the Mountains, Cindersap Forest, or the Bus Stop, or in Artifact Troves. [3, 18]"
+  },
+  {
+    "id": 8,
+    "name": "Bone Flute",
+    "category": "artifact",
+    "collected": false,
+    "img": "Bone_Flute.png",
+    "location": "Artifact Spots in the Mountains, Cindersap Forest, or Pelican Town, Fishing Treasure Chests, or Artifact Troves. [3, 18]"
+  },
+  {
+    "id": 9,
+    "name": "Chewing Stick",
+    "category": "artifact",
+    "collected": false,
+    "img": "Chewing_Stick.png",
+    "location": "Artifact Spots in the Mountains, Cindersap Forest, or Pelican Town, dropped by Duggy, or found in Fishing Treasure Chests and Artifact Troves. [3, 18]"
+  },
+  {
+    "id": 10,
+    "name": "Chicken Statue",
+    "category": "artifact",
+    "collected": false,
+    "img": "Chicken_Statue.png",
+    "location": "Artifact Spots on the Farm, Fishing Treasure Chests, or in Artifact Troves. [3, 16]"
+  },
+  {
+    "id": 11,
+    "name": "Chipped Amphora",
+    "category": "artifact",
+    "collected": false,
+    "img": "Chipped_Amphora.png",
+    "location": "Artifact Spots in Pelican Town, or in Artifact Troves. [3, 18]"
+  },
+  {
+    "id": 12,
+    "name": "Dinosaur Egg",
+    "category": "artifact",
+    "collected": false,
+    "img": "Dinosaur_Egg.png",
+    "location": "Artifact Spots in the Mountains, Fishing Treasure Chests, dropped by Pepper Rex, found in Prehistoric Floors in the Skull Cavern, or won in the Crane Game at the Movie Theater. [3]"
+  },
+  {
+    "id": 13,
+    "name": "Dried Starfish",
+    "category": "artifact",
+    "collected": false,
+    "img": "Dried_Starfish.png",
+    "location": "Artifact Spots at the Beach, Fishing Treasure Chests. [3]"
+  },
+  {
+    "id": 14,
+    "name": "Dwarf Gadget",
+    "category": "artifact",
+    "collected": false,
+    "img": "Dwarf_Gadget.png",
+    "location": "Tilling in the Mines (Levels 41-80), Magma Geodes, Omni Geodes, or Artifact Troves. [3, 18]"
+  },
+  {
+    "id": 15,
+    "name": "Dwarf Scroll I",
+    "category": "artifact",
+    "collected": false,
+    "img": "Dwarf_Scroll_I.png",
+    "location": "Tilling in the Mines (any level), or dropped by Bats, Bugs, Cave Flies, Duggies, Green Slimes, Grubs, Rock Crabs, or Stone Golems. [3]"
+  },
+  {
+    "id": 16,
+    "name": "Dwarf Scroll II",
+    "category": "artifact",
+    "collected": false,
+    "img": "Dwarf_Scroll_II.png",
+    "location": "Tilling in the Mines (Levels 1-40), dropped by Frost Bats, Frost Jellies, or Ghosts. [3]"
+  },
+  {
+    "id": 17,
+    "name": "Dwarf Scroll III",
+    "category": "artifact",
+    "collected": false,
+    "img": "Dwarf_Scroll_III.png",
+    "location": "Dropped by Blue Slimes, Lava Bats, Lava Crabs, Metal Heads, Squid Kids, or Shadow Brutes. [3]"
+  },
+  {
+    "id": 18,
+    "name": "Dwarf Scroll IV",
+    "category": "artifact",
+    "collected": false,
+    "img": "Dwarf_Scroll_IV.png",
+    "location": "Dropped by any monster (except for a few specific ones like Skeletons and Serpents) on any floor of the Mines or Skull Cavern. [3]"
+  },
+  {
+    "id": 19,
+    "name": "Dwarvish Helm",
+    "category": "artifact",
+    "collected": false,
+    "img": "Dwarvish_Helm.png",
+    "location": "Tilling in the Mines (Levels 1-40), Geodes, or Omni Geodes. [3, 10]"
+  },
+  {
+    "id": 20,
+    "name": "Elvish Jewelry",
+    "category": "artifact",
+    "collected": false,
+    "img": "Elvish_Jewelry.png",
+    "location": "Artifact Spots in Cindersap Forest, Fishing Treasure Chests, or Artifact Troves. [3, 18]"
+  },
+  {
+    "id": 21,
+    "name": "Glass Shards",
+    "category": "artifact",
+    "collected": false,
+    "img": "Glass_Shards.png",
+    "location": "Artifact Spots at the Beach, Fishing Treasure Chests. [3]"
+  },
+  {
+    "id": 22,
+    "name": "Golden Mask",
+    "category": "artifact",
+    "collected": false,
+    "img": "Golden_Mask.png",
+    "location": "Artifact Spots in the Desert, or in Artifact Troves. [3]"
+  },
+  {
+    "id": 23,
+    "name": "Golden Relic",
+    "category": "artifact",
+    "collected": false,
+    "img": "Golden_Relic.png",
+    "location": "Artifact Spots in the Desert, or in Artifact Troves. [3]"
+  },
+  {
+    "id": 24,
+    "name": "Nautilus Fossil",
+    "category": "artifact",
+    "collected": false,
+    "img": "Nautilus_Fossil.png",
+    "location": "Artifact Spots at the Beach, Fishing Treasure Chests. [3]"
+  },
+  {
+    "id": 25,
+    "name": "Ornamental Fan",
+    "category": "artifact",
+    "collected": false,
+    "img": "Ornamental_Fan.png",
+    "location": "Artifact Spots at the Beach, in Cindersap Forest, or Pelican Town, Fishing Treasure Chests, or Artifact Troves. [3, 18]"
+  },
+  {
+    "id": 26,
+    "name": "Prehistoric Handaxe",
+    "category": "artifact",
+    "collected": false,
+    "img": "Prehistoric_Handaxe.png",
+    "location": "Artifact Spots in the Mountains, Cindersap Forest, or the Bus Stop. [3]"
+  },
+  {
+    "id": 27,
+    "name": "Prehistoric Rib",
+    "category": "artifact",
+    "collected": false,
+    "img": "Prehistoric_Rib.png",
+    "location": "Artifact Spots in Pelican Town or dropped by Pepper Rex, also found in Bone Nodes on Ginger Island. [3]"
+  },
+  {
+    "id": 28,
+    "name": "Prehistoric Scapula",
+    "category": "artifact",
+    "collected": false,
+    "img": "Prehistoric_Scapula.png",
+    "location": "Artifact Spots in Cindersap Forest or Pelican Town, also found in Bone Nodes on Ginger Island. [3]"
+  },
+  {
+    "id": 29,
+    "name": "Prehistoric Skull",
+    "category": "artifact",
+    "collected": false,
+    "img": "Prehistoric_Skull.png",
+    "location": "Artifact Spots in the Mountains, or dropped by Haunted Skulls. [3]"
+  },
+  {
+    "id": 30,
+    "name": "Prehistoric Tibia",
+    "category": "artifact",
+    "collected": false,
+    "img": "Prehistoric_Tibia.png",
+    "location": "Artifact Spots in Cindersap Forest or the Railroad, dropped by Pepper Rex, also found in Bone Nodes on Ginger Island. [3]"
+  },
+  {
+    "id": 31,
+    "name": "Prehistoric Tool",
+    "category": "artifact",
+    "collected": false,
+    "img": "Prehistoric_Tool.png",
+    "location": "Artifact Spots in the Mountains, Cindersap Forest, or the Bus Stop, Fishing Treasure Chests, or Artifact Troves. [3, 18]"
+  },
+  {
+    "id": 32,
+    "name": "Prehistoric Vertebra",
+    "category": "artifact",
+    "collected": false,
+    "img": "Prehistoric_Vertebra.png",
+       "location": "Artifact Spots at the Bus Stop, dropped by Pepper Rex, also found in Bone Nodes on Ginger Island. [3]"
+  },
+  {
+    "id": 33,
+    "name": "Rare Disc",
+    "category": "artifact",
+    "collected": false,
+    "img": "Rare_Disc.png",
+    "location": "Dropped by Bats, Shadow Brutes, or Spiders, or found in Fishing Treasure Chests or Artifact Troves. [3]"
+  },
+  {
+    "id": 34,
+    "name": "Rusty Cog",
+    "category": "artifact",
+    "collected": false,
+    "img": "Rusty_Cog.png",
+    "location": "Tilling in the Mines or Skull Cavern, Fishing Treasure Chests, or Artifact Troves. [3, 18]"
+  },
+  {
+    "id": 35,
+    "name": "Rusty Spoon",
+    "category": "artifact",
+    "collected": false,
+    "img": "Rusty_Spoon.png",
+    "location": "Artifact Spots in Pelican Town, Tilling in the Mines or Skull Cavern, Fishing Treasure Chests, or Artifact Troves. [3, 16, 18]"
+  },
+  {
+    "id": 36,
+    "name": "Rusty Spur",
+    "category": "artifact",
+    "collected": false,
+    "img": "Rusty_Spur.png",
+    "location": "Artifact Spots on the Farm, Tilling in the Mines or Skull Cavern, Fishing Treasure Chests, or Artifact Troves. [3, 18]"
+  },
+  {
+    "id": 37,
+    "name": "Skeletal Hand",
+    "category": "artifact",
+    "collected": false,
+    "img": "Skeletal_Hand.png",
+    "location": "Artifact Spots at the Beach or in the Backwoods, also found in Bone Nodes on Ginger Island. [3]"
+  },
+  {
+    "id": 38,
+    "name": "Skeletal Tail",
+    "category": "artifact",
+    "collected": false,
+    "img": "Skeletal_Tail.png",
+    "location": "Artifact Spots on the Farm or in the Backwoods, Fishing Treasure Chests, also found in Bone Nodes on Ginger Island. [3]"
+  },
+  {
+    "id": 39,
+    "name": "Strange Doll (green)",
+    "category": "artifact",
+    "collected": false,
+    "img": "Strange_Doll_(green).png",
+    "location": "Fishing Treasure Chests, or by solving Secret Note #18. [18]"
+  },
+  {
+    "id": 40,
+    "name": "Strange Doll",
+    "category": "artifact",
+    "collected": false,
+    "img": "Strange_Doll.png",
+    "location": "Tilling in the Mines, Skull Cavern, or on the Farm, Fishing Treasure Chests, or by solving Secret Note #17. [18]"
+  },
+  {
+    "id": 41,
+    "name": "Trilobite",
+    "category": "artifact",
+    "collected": false,
+    "img": "Trilobite.png",
+    "location": "Artifact Spots at the Beach, in the Mountains, or Cindersap Forest. [3]"
+  },
+  {
+    "id": 42,
+    "name": "Alamite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Alamite.png",
+    "location": "Geodes, Omni Geodes. [10]"
+  },
+  {
+    "id": 43,
+    "name": "Amethyst",
+    "category": "mineral",
+    "collected": false,
+    "img": "Amethyst.png",
+    "location": "Amethyst Nodes, Gem Nodes, Geodes, Omni Geodes, Fishing Treasure Chests. [12]"
+  },
+  {
+    "id": 44,
+    "name": "Aquamarine",
+    "category": "mineral",
+    "collected": false,
+    "img": "Aquamarine.png",
+    "location": "Aquamarine Nodes, Gem Nodes, Geodes, Omni Geodes, Fishing Treasure Chests. [12]"
+  },
+  {
+    "id": 45,
+    "name": "Baryte",
+    "category": "mineral",
+    "collected": false,
+    "img": "Baryte.png",
+    "location": "Magma Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 46,
+    "name": "Basalt",
+    "category": "mineral",
+    "collected": false,
+    "img": "Basalt.png",
+    "location": "Magma Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 47,
+    "name": "Bixite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Bixite.png",
+    "location": "Magma Geodes, Omni Geodes, dropped by Magma Sprites and Magma Sparkers. [18]"
+  },
+  {
+    "id": 48,
+    "name": "Calcite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Calcite.png",
+    "location": "Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 49,
+    "name": "Celestine",
+    "category": "mineral",
+    "collected": false,
+    "img": "Celestine.png",
+    "location": "Geodes, Omni Geodes. [10]"
+  },
+  {
+    "id": 50,
+    "name": "Diamond",
+    "category": "mineral",
+    "collected": false,
+    "img": "Diamond.png",
+    "location": "Diamond Nodes (Mines level 50+), dropped by any monster after reaching the bottom of the Mines, Omni Geodes, Fishing Treasure Chests. [12]"
+  },
+  {
+    "id": 51,
+    "name": "Dolomite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Dolomite.png",
+    "location": "Magma Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 52,
+    "name": "Earth Crystal",
+    "category": "mineral",
+    "collected": false,
+    "img": "Earth_Crystal.png",
+    "location": "Mines (Levels 1-39), Geodes, Omni Geodes, dropped by Duggies and Haunted Skulls, Panning, or found in Fishing Treasure Chests. [1, 12]"
+  },
+  {
+    "id": 53,
+    "name": "Emerald",
+    "category": "mineral",
+    "collected": false,
+    "img": "Emerald.png",
+    "location": "Emerald Nodes, Gem Nodes, Geodes, Omni Geodes, Fishing Treasure Chests. [12]"
+  },
+  {
+    "id": 54,
+    "name": "Esperite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Esperite.png",
+    "location": "Frozen Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 55,
+    "name": "Fairy Stone",
+    "category": "mineral",
+    "collected": false,
+    "img": "Fairy_Stone.png",
+    "location": "Frozen Geodes, Omni Geodes. [10]"
+  },
+  {
+    "id": 56,
+    "name": "Fire Opal",
+    "category": "mineral",
+    "collected": false,
+    "img": "Fire_Opal.png",
+    "location": "Magma Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 57,
+    "name": "Fire Quartz",
+    "category": "mineral",
+    "collected": false,
+    "img": "Fire_Quartz.png",
+    "location": "Mines (Levels 81+), Magma Geodes, Omni Geodes. [5, 6]"
+  },
+  {
+    "id": 58,
+    "name": "Fluorapatite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Fluorapatite.png",
+    "location": "Frozen Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 59,
+    "name": "Frozen Tear",
+    "category": "mineral",
+    "collected": false,
+    "img": "Frozen_Tear.png",
+    "location": "Mines (Levels 40-79), Frozen Geodes, Omni Geodes, dropped by Dust Sprites. [1, 12]"
+  },
+  {
+    "id": 60,
+    "name": "Geminite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Geminite.png",
+    "location": "Frozen Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 61,
+    "name": "Ghost Crystal",
+    "category": "mineral",
+    "collected": false,
+    "img": "Ghost_Crystal.png",
+    "location": "Frozen Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 62,
+    "name": "Granite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Granite.png",
+    "location": "Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 63,
+    "name": "Helvite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Helvite.png",
+    "location": "Magma Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 64,
+    "name": "Hematite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Hematite.png",
+    "location": "Frozen Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 65,
+    "name": "Jade",
+    "category": "mineral",
+    "collected": false,
+    "img": "Jade.png",
+    "location": "Jade Nodes, Gem Nodes, Geodes, Omni Geodes, dropped by Blue Slimes, Fishing Treasure Chests. [12]"
+  },
+  {
+    "id": 66,
+    "name": "Jagoite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Jagoite.png",
+    "location": "Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 67,
+    "name": "Jamborite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Jamborite.png",
+    "location": "Geodes, Omni Geodes. [10]"
+  },
+  {
+    "id": 68,
+    "name": "Jasper",
+    "category": "mineral",
+    "collected": false,
+    "img": "Jasper.png",
+    "location": "Magma Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 69,
+    "name": "Kyanite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Kyanite.png",
+    "location": "Frozen Geodes, Omni Geodes. [10]"
+  },
+  {
+    "id": 70,
+    "name": "Lemon Stone",
+    "category": "mineral",
+    "collected": false,
+    "img": "Lemon_Stone.png",
+    "location": "Magma Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 71,
+    "name": "Limestone",
+    "category": "mineral",
+    "collected": false,
+    "img": "Limestone.png",
+    "location": "Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 72,
+    "name": "Lunarite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Lunarite.png",
+    "location": "Frozen Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 73,
+    "name": "Malachite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Malachite.png",
+    "location": "Frozen Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 74,
+    "name": "Marble",
+    "category": "mineral",
+    "collected": false,
+    "img": "Marble.png",
+    "location": "Frozen Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 75,
+    "name": "Mudstone",
+    "category": "mineral",
+    "collected": false,
+    "img": "Mudstone.png",
+    "location": "Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 76,
+    "name": "Nekoite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Nekoite.png",
+    "location": "Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 77,
+    "name": "Neptunite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Neptunite.png",
+    "location": "Magma Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 78,
+    "name": "Obsidian",
+    "category": "mineral",
+    "collected": false,
+    "img": "Obsidian.png",
+    "location": "Magma Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 79,
+    "name": "Ocean Stone",
+    "category": "mineral",
+    "collected": false,
+    "img": "Ocean_Stone.png",
+    "location": "Frozen Geodes, Omni Geodes. [10]"
+  },
+  {
+    "id": 80,
+    "name": "Opal",
+    "category": "mineral",
+    "collected": false,
+    "img": "Opal.png",
+    "location": "Frozen Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 81,
+    "name": "Orpiment",
+    "category": "mineral",
+    "collected": false,
+    "img": "Orpiment.png",
+    "location": "Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 82,
+    "name": "Petrified Slime",
+    "category": "mineral",
+    "collected": false,
+    "img": "Petrified_Slime.png",
+    "location": "Geodes, Omni Geodes, dropped by Slimes in the Slime Hutch. [18]"
+  },
+  {
+    "id": 83,
+    "name": "Prismatic Shard",
+    "category": "mineral",
+    "collected": false,
+    "img": "Prismatic_Shard.png",
+    "location": "Iridium Nodes, Mystic Stones, Omni Geodes, dropped by Serpents and Mummies, or found in Fishing Treasure Chests. [12]"
+  },
+  {
+    "id": 84,
+    "name": "Pyrite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Pyrite.png",
+    "location": "Frozen Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 85,
+    "name": "Quartz",
+    "category": "mineral",
+    "collected": false,
+    "img": "Quartz.png",
+    "location": "Foraging in the Mines and Skull Cavern, Geodes, Omni Geodes, dropped by Stone Golems. [12]"
+  },
+  {
+    "id": 86,
+    "name": "Ruby",
+    "category": "mineral",
+    "collected": false,
+    "img": "Ruby.png",
+    "location": "Ruby Nodes, Gem Nodes, Geodes, Omni Geodes, Fishing Treasure Chests. [12]"
+  },
+  {
+    "id": 87,
+    "name": "Sandstone",
+    "category": "mineral",
+    "collected": false,
+    "img": "Sandstone.png",
+    "location": "Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 88,
+    "name": "Slate",
+    "category": "mineral",
+    "collected": false,
+    "img": "Slate.png",
+    "location": "Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 89,
+    "name": "Soapstone",
+    "category": "mineral",
+    "collected": false,
+    "img": "Soapstone.png",
+    "location": "Frozen Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 90,
+    "name": "Star Shards",
+    "category": "mineral",
+    "collected": false,
+    "img": "Star_Shards.png",
+    "location": "Magma Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 91,
+    "name": "Thunder Egg",
+    "category": "mineral",
+    "collected": false,
+    "img": "Thunder_Egg.png",
+    "location": "Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 92,
+    "name": "Tigerseye",
+    "category": "mineral",
+    "collected": false,
+    "img": "Tigerseye.png",
+    "location": "Magma Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 93,
+    "name": "Topaz",
+    "category": "mineral",
+    "collected": false,
+    "img": "Topaz.png",
+    "location": "Topaz Nodes, Gem Nodes, Geodes, Omni Geodes, Fishing Treasure Chests. [12]"
+  },
+  {
+    "id": 94,
+    "name": "Aerinite",
+    "category": "mineral",
+    "collected": false,
+    "img": "Aerinite.png",
+    "location": "Frozen Geodes, Omni Geodes. [18]"
+  },
+  {
+    "id": 95,
+    "name": "Ancient Plate",
+    "category": "artifact",
+    "collected": false,
+    "img": "Ancient_Plate.png",
+    "location": "Magma Geodes, Omni Geodes, Artifact Troves. [18]"
+  }
 ]
