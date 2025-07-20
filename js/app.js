@@ -4,6 +4,7 @@ import { renderVillagers } from './villagers.js';
 import { renderBundles }   from './bundles.js';
 import { renderMuseum }    from './museum.js';
 import { renderFish } from './fish.js';
+import { renderPlanner } from './planner.js';
 
 const STORAGE_KEY = 'stardewSave';
 let data;
@@ -47,6 +48,7 @@ tabs.forEach(btn =>
       case 'bundles':   renderBundles(data);   break;
       case 'museum':    renderMuseum(data);    break;
       case 'fish':      renderFish(data);      break;
+      case 'planner':   renderPlanner(data);   break;
     }
   })
 );
