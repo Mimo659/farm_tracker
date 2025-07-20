@@ -2,7 +2,14 @@ export function renderBundles(data) {
   const grid = document.getElementById('bundle-grid');
   grid.innerHTML = '';
 
-  data.bundles.forEach(b => {
+  // Filter and sort items: completed items go to the bottom
+  const completedItems = data.bundles.filter(item => item.completed);
+  const uncompletedItems = data.bundles.filter(item => !item.completed);
+
+  // Combine the two arrays with uncompleted items first
+  const sortedItems = uncompletedItems.concat(completedItems);
+
+  sortedItems.forEach(b => {
     const card = document.createElement('div');
     card.className = `glass pixel-border p-4 text-xs cursor-pointer transition ${
       b.completed ? 'bg-green-100 opacity-75' : ''

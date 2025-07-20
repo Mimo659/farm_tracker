@@ -7,7 +7,14 @@ export function renderFish(data) {
     return;
   }
 
-  data.fish.forEach(f => {
+  // Filter and sort items: caught items go to the bottom
+  const caughtItems = data.fish.filter(item => item.caught);
+  const uncaughtItems = data.fish.filter(item => !item.caught);
+
+  // Combine the two arrays with uncaught items first
+  const sortedItems = uncaughtItems.concat(caughtItems);
+
+  sortedItems.forEach(f => {
     const card = document.createElement('div');
     card.className = `glass pixel-border p-3 flex flex-col items-center cursor-pointer ${
       f.caught ? 'opacity-50' : ''
