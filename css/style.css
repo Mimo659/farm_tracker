@@ -10,7 +10,7 @@
 }
 
 #main-header {
-  background: url(../images/header.png) no-repeat center center;
+  background: url('/images/header.png') no-repeat center center;
   background-size: cover;
   border-bottom: 4px solid #4D3824;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
