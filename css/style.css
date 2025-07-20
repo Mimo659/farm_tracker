@@ -9,15 +9,18 @@
   body { background: var(--c-bg); color: var(--c-dark); }
 }
 
-.glass {
-  background: #6B4F34;
+#main-header {
+  background: url(../images/header.png) no-repeat center center;
+  background-size: cover;
   border-bottom: 4px solid #4D3824;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  height: 120px;
 }
 h1 {
   font-family: 'Press Start 2P', cursive;
   color: #F0EAD6 !important;
   text-shadow: 2px 2px 0px #4D3824;
+  padding-top: 2.75rem;
 }
 .pixel-border {
   image-rendering: pixelated;
