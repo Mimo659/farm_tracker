@@ -9,15 +9,18 @@
   body { background: var(--c-bg); color: var(--c-dark); }
 }
 
-.glass {
-  background: #6B4F34;
+#main-header {
+  background: url('/images/header.png') no-repeat center center;
+  background-size: cover;
   border-bottom: 4px solid #4D3824;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  height: 120px;
 }
 h1 {
   font-family: 'Press Start 2P', cursive;
   color: #F0EAD6 !important;
   text-shadow: 2px 2px 0px #4D3824;
+  padding-top: 2.75rem;
 }
 .pixel-border {
   image-rendering: pixelated;
@@ -47,3 +50,28 @@ h1 {
 .glass .text-yellow-400{ color: #f59e0b !important; }
 .glass .text-gray-400  { color: #6b7280 !important; }
 .glass .text-red-600   { color: #b91c1c !important; }
+
+
+  /* Styling for the header */
+  header {
+    background-color: #333; /* Dark background for header */
+    color: white;
+    padding: 10px 20px; /* Some padding around header content */
+    display: flex; /* Enables flexbox for aligning items */
+    justify-content: space-between; /* Pushes items to the ends */
+    align-items: center; /* Vertically centers items */
+    min-height: 60px; /* Minimum height for the header */
+  }
+
+  header h1 {
+    margin: 0; /* Remove default margin from h1 */
+    font-size: 2em;
+  }
+
+  /* Styling for the image within the header */
+  .header-image {
+    max-width: 100px; /* Limit image width */
+    height: auto; /* Maintain aspect ratio */
+    padding-bottom: 20px; /* Add 20px padding to the bottom of the image */
+    display: block; /* Ensures padding is applied correctly */
+  }
