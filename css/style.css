@@ -56,7 +56,7 @@ h1 {
   header {
     background-color: #333; /* Dark background for header */
     color: white;
-    padding: 10px 20px; /* Some padding around header content */
+    padding: 20px 40px; /* Some padding around header content */
     display: flex; /* Enables flexbox for aligning items */
     justify-content: space-between; /* Pushes items to the ends */
     align-items: center; /* Vertically centers items */
@@ -72,6 +72,6 @@ h1 {
   .header-image {
     max-width: 100px; /* Limit image width */
     height: auto; /* Maintain aspect ratio */
-    padding-bottom: 20px; /* Add 20px padding to the bottom of the image */
+    padding-bottom: 40px; /* Add 20px padding to the bottom of the image */
     display: block; /* Ensures padding is applied correctly */
   }
