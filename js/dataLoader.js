@@ -33,7 +33,7 @@ export async function loadGameData() {
       villagers,
       bundles,
       achievements,
-      museum: museum.map(item => ({ ...item, collected: false })), // Initialize collected state
+      museum: museum.map(item => ({ ...item, collected: false, location: item.location })), // Initialize collected state
       secretNotes,
       books,
       animals,
