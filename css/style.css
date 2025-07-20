@@ -10,14 +10,15 @@
 }
 
 .glass {
-  background: var(--c-surface);
-  backdrop-filter: blur(var(--blur));
-  border: 1px solid rgba(255,255,255,.2);
-  border-radius: var(--r);
-  box-shadow: 0 8px 32px var(--c-shadow);
-  transition: transform .2s, box-shadow .2s;
+  background: #6B4F34;
+  border-bottom: 4px solid #4D3824;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-.glass:hover { transform: translateY(-2px); box-shadow: 0 12px 40px var(--c-shadow); }
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  color: #F0EAD6;
+  text-shadow: 2px 2px 0px #4D3824;
+}
 .pixel-border {
   image-rendering: pixelated;
   border: 2px solid var(--c-dark);

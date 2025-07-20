@@ -20,13 +20,6 @@ if (!data) data = await loadGameData(); // skeleton
 // ---------- helpers ----------
 function save() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-  refreshHeader();
-}
-
-function refreshHeader() {
-  const f = data.farmInfo;
-  document.getElementById('date-display').textContent = `${f.season} 1, Year ${f.year}`;
-  document.getElementById('money-display').textContent = `${f.money}g`;
 }
 
 
@@ -59,5 +52,4 @@ tabs.forEach(btn =>
 );
 
 // ---------- start ----------
-refreshHeader();
 tabs[0].click();   // default: inventory
