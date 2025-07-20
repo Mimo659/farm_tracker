@@ -22,8 +22,7 @@
 <main id="main-content" class="container mx-auto px-4 py-24 max-w-6xl">
   <!-- Tab bar -->
   <nav class="flex flex-wrap gap-2 justify-center mb-6">
-    <button data-tab="dashboard" class="tab active">Dashboard</button>
-    <button data-tab="inventory" class="tab">Inventory</button>
+    <button data-tab="inventory" class="tab active">Inventory</button>
     <button data-tab="villagers" class="tab">Villagers</button>
     <button data-tab="fish" class="tab">Fish</button>
     <button data-tab="bundles"   class="tab">Bundles</button>
@@ -31,44 +30,6 @@
     <button data-tab="settings"  class="tab">Settings</button>
   </nav>
 
-  <!-- Dashboard -->
-  <section id="dashboard-tab" class="tab-content">
-    <div class="glass pixel-border p-6 space-y-4 max-w-xl mx-auto text-xs">
-      <h2 class="text-center text-lg">Dashboard</h2>
-
-      <label>Farm Name</label>
-      <input id="dash-farm-name" class="w-full px-2 py-1 bg-surface rounded" placeholder="Farm Name">
-
-      <label>Player Name</label>
-      <input id="dash-player" class="w-full px-2 py-1 bg-surface rounded" placeholder="Player">
-
-      <label>Season</label>
-      <select id="dash-season" class="w-full px-2 py-1 bg-surface rounded">
-        <option>spring</option><option>summer</option><option>fall</option><option>winter</option>
-      </select>
-
-      <label>Year</label>
-      <input type="number" id="dash-year" class="w-full px-2 py-1 bg-surface rounded" min="1" value="1">
-
-      <label>Starting Gold</label>
-      <input type="number" id="dash-money" class="w-full px-2 py-1 bg-surface rounded" min="0" value="500">
-
-      <label>Farm Layout</label>
-      <select id="dash-layout" class="w-full px-2 py-1 bg-surface rounded">
-        <option>Standard</option><option>Riverland</option><option>Forest</option><option>Hill-top</option>
-        <option>Wilderness</option><option>Four Corners</option><option>Beach</option>
-      </select>
-
-      <label>Pet</label>
-      <select id="dash-pet" class="w-full px-2 py-1 bg-surface rounded">
-        <option>Dog</option><option>Cat</option>
-      </select>
-
-      <button id="save-dash" class="w-full py-2 bg-accent text-white rounded pixel-border">
-        Save Dashboard
-      </button>
-    </div>
-  </section>
 
   <!-- Inventory -->
   <section id="inventory-tab" class="tab-content hidden">

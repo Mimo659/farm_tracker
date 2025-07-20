@@ -29,28 +29,6 @@ function refreshHeader() {
   document.getElementById('money-display').textContent = `${f.money}g`;
 }
 
-function loadDashboard() {
-  const f = data.farmInfo;
-  document.getElementById('dash-farm-name').value = f.name || '';
-  document.getElementById('dash-player').value   = f.player || '';
-  document.getElementById('dash-season').value   = f.season || 'spring';
-  document.getElementById('dash-year').value     = f.year || 1;
-  document.getElementById('dash-money').value    = f.money || 500;
-  document.getElementById('dash-layout').value   = f.layout || 'Standard';
-  document.getElementById('dash-pet').value      = f.pet || 'Dog';
-}
-
-// ---------- dashboard form ----------
-document.getElementById('save-dash').addEventListener('click', () => {
-  data.farmInfo = {
-    name:   document.getElementById('dash-farm-name').value.trim(),
-    player: document.getElementById('dash-player').value.trim(), 
-    layout: document.getElementById('dash-layout').value,
-    pet:    document.getElementById('dash-pet').value
-  };
-  save();
-  alert('Dashboard saved!');
-});
 
 // ---------- reset ----------
 document.getElementById('reset-btn').addEventListener('click', () => {
@@ -71,7 +49,6 @@ tabs.forEach(btn =>
     document.getElementById(`${tab}-tab`).classList.remove('hidden');
 
     switch (tab) {
-      case 'dashboard': loadDashboard(); break;
       case 'inventory': renderInventory(data); break;
       case 'villagers': renderVillagers(data); break;
       case 'bundles':   renderBundles(data);   break;
@@ -83,4 +60,4 @@ tabs.forEach(btn =>
 
 // ---------- start ----------
 refreshHeader();
-tabs[0].click();   // default: dashboard
+tabs[0].click();   // default: inventory
