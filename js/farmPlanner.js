@@ -1,8 +1,8 @@
 const STORAGE_KEY = 'stardewSave';
-
 function save(data) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
 }
+
 export function renderFarmPlanner(data) {
   const root = document.getElementById('farm-planner-content');
   root.innerHTML = `
@@ -35,15 +35,12 @@ export function renderFarmPlanner(data) {
     </div>
   `;
 
-  /* ---------- CONFIG ---------- */
-  const W = 16, H = 9, TS = 30;           // 16×9 tiles, 30 px each
-  const canvas = root.querySelector('#farmCanvas');
-  const ctx = canvas.getContext('2d');
   const assets = {
     barn:    { color: '#8B4513', icon: '🏠' },
     coop:    { color: '#D2B48C', icon: '🐓' },
     silo:    { color: '#A0522D', icon: '🌾' },
     well:    { color: '#4682B4', icon: '🚰' },
+    shed:    { color: '#DEB887', icon: '🛖' },
     path:    { color: '#7F7F7F', icon: '' },
     scare:   { color: '#FF8C00', icon: '😨' },
     sprinkler:{color:'#00BFFF', icon: '💧'},
@@ -51,7 +48,10 @@ export function renderFarmPlanner(data) {
     chest:   { color: '#DAA520', icon: '📦' }
   };
 
-  /* ---------- STATE ---------- */
+  const W = 16, H = 9, TS = 30;
+  const canvas = root.querySelector('#farmCanvas');
+  const ctx = canvas.getContext('2d');
+
   data.planner ||= { layout: 'standard', history: [], pos: -1, grid: [] };
   const state = data.planner;
 
@@ -73,6 +73,8 @@ export function renderFarmPlanner(data) {
       }
     }
   }
+
+  
 
   /* ---------- EDIT ---------- */
   function addToHistory(grid) {
