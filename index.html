@@ -28,6 +28,7 @@
     <button data-tab="fish" class="tab">Fish</button>
     <button data-tab="bundles"   class="tab">Bundles</button>
     <button data-tab="museum"    class="tab">Museum</button>
+    <button data-tab="daily"     class="tab">Daily</button>
     <button data-tab="settings"  class="tab">Settings</button>
   </nav>
 
@@ -56,6 +57,17 @@
   <!-- Museum -->
   <section id="museum-tab" class="tab-content hidden">
     <div id="museum-grid" class="auto-grid"></div>
+  </section>
+
+  <!-- Daily -->
+  <section id="daily-tab" class="tab-content hidden">
+    <div class="mb-4">
+      <input type="text" id="new-task-input" placeholder="Neue Aufgabe..." class="w-full p-2 bg-white border-2 border-gray-300 rounded" autocomplete="off">
+      <button id="add-task-btn" class="px-4 py-2 bg-green-600 text-white rounded pixel-border mt-2">
+        <i class="fas fa-plus"></i> Hinzufügen
+      </button>
+    </div>
+    <div id="daily-grid" class="auto-grid"></div>
   </section>
 
   <!-- Settings -->

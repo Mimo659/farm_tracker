@@ -9,6 +9,7 @@ import { renderMines } from './mines.js';
 import { renderShipping } from './shipping.js';
 import { renderQuests } from './quests.js';
 import { renderMuseum } from './museum.js';
+import { renderDaily } from './daily.js';
 import { startClock } from './clock.js';
 import { startSettings } from './settings.js';
 
@@ -54,6 +55,7 @@ function switchTab(tab) {
   if (tab === 'shipping')  renderShipping(data);
   if (tab === 'quests')    renderQuests(data);
   if (tab === 'museum')    renderMuseum(data);
+  if (tab === 'daily')     renderDaily(data);
 }
 
 init();
