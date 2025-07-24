@@ -32,9 +32,32 @@ export function renderInventory(data, searchTerm = '') {
   });
 }
 
-document.getElementById('inventory-search').addEventListener('input', (e) => {
+const searchInput = document.getElementById('inventory-search');
+const suggestionsContainer = document.getElementById('suggestions-container');
+
+searchInput.addEventListener('input', (e) => {
+  const searchTerm = e.target.value;
   const data = JSON.parse(localStorage.getItem('stardewSave'));
-  if (data) {
-    renderInventory(data, e.target.value);
+  if (!data) return;
+
+  suggestionsContainer.innerHTML = '';
+  if (searchTerm.length > 0) {
+    const suggestions = data.items.filter(item =>
+      item.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    suggestions.forEach(item => {
+      const suggestionItem = document.createElement('div');
+      suggestionItem.textContent = item.name;
+      suggestionItem.classList.add('suggestion-item');
+      suggestionItem.addEventListener('click', () => {
+        searchInput.value = item.name;
+        suggestionsContainer.innerHTML = '';
+        renderInventory(data, item.name);
+      });
+      suggestionsContainer.appendChild(suggestionItem);
+    });
   }
+
+  renderInventory(data, searchTerm);
 });
