@@ -23,9 +23,12 @@ export function renderFish(data) {
       <img src="images/items/${f.img}" class="w-14 h-14 object-contain">
       <span class="text-xs mt-1">${f.name}</span>
       <span class="text-xs">${f.caught ? '✔' : ''}</span>
+      <button class="mt-2 text-xs px-2 py-1 bg-primary text-white rounded">
+        Location
+      </button>
 
-      <!-- hover panel -->
-      <div class="hidden group-hover:block text-xs mt-2 space-y-1 w-full">
+      <!-- location panel (initially hidden) -->
+      <div class="hidden mt-2 text-xs space-y-1 w-full">
         <p><strong>Season:</strong> ${f.season}</p>
         <p><strong>Location:</strong> ${f.location}</p>
         <p><strong>Time:</strong> ${f.time}</p>
@@ -34,11 +37,19 @@ export function renderFish(data) {
       </div>
     `;
 
-    card.classList.add('group');
-    card.addEventListener('click', () => {
+    card.addEventListener('click', e => {
+      if (e.target.tagName === 'BUTTON') return;
       f.caught = !f.caught;
       localStorage.setItem('stardewSave', JSON.stringify(data));
       renderFish(data);
+    });
+
+    // location button opens/closes panel
+    const btn = card.querySelector('button');
+    const panel = card.querySelector('div.hidden');
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      panel.classList.toggle('hidden');
     });
 
     grid.appendChild(card);
