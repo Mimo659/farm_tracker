@@ -1,11 +1,13 @@
+// dataLoader.js
 export async function loadGameData() {
-  // helper: safe fetch that never throws, returns fallback on any error
-  async function fetchJSON(path, fallback = []) {
+  // Safe loader: never throws, returns fallback on any failure
+  async function safeFetch(path, fallback = []) {
     try {
       const r = await fetch(path);
-      return r.ok ? await r.json() : fallback;
+      if (!r.ok) throw new Error(r.status);
+      return await r.json();
     } catch {
-      console.warn(`Could not load ${path}`);
+      // console.warn(`Could not load ${path}`);   // optional log
       return fallback;
     }
   }
@@ -25,19 +27,19 @@ export async function loadGameData() {
     dailyTasks,
     planner
   ] = await Promise.all([
-    fetchJSON('data/languages.json', {}),
-    fetchJSON('data/items.json', []),
-    fetchJSON('data/villagers.json', []),
-    fetchJSON('data/bundles.json', []),
-    fetchJSON('data/achievements.json', []),
-    fetchJSON('data/museum.json', []),
-    fetchJSON('data/secretNotes.json', []),
-    fetchJSON('data/books.json', []),
-    fetchJSON('data/animals.json', []),
-    fetchJSON('data/skills.json', []),
-    fetchJSON('data/fish.json', []),
-    fetchJSON('data/dailyTasks.json', []),
-    fetchJSON('data/plannerAssets.json', [])
+    safeFetch('data/languages.json', {}),
+    safeFetch('data/items.json', []),
+    safeFetch('data/villagers.json', []),
+    safeFetch('data/bundles.json', []),
+    safeFetch('data/achievements.json', []),
+    safeFetch('data/museum.json', []),
+    safeFetch('data/secretNotes.json', []),
+    safeFetch('data/books.json', []),
+    safeFetch('data/animals.json', []),
+    safeFetch('data/skills.json', []),
+    safeFetch('data/fish.json', []),
+    safeFetch('data/dailyTasks.json', []),
+    safeFetch('data/plannerAssets.json', [])
   ]);
 
   return {
