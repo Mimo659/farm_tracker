@@ -7,6 +7,7 @@
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="images/heart.png">
   <link rel="stylesheet" href="css/output.css">
+  <link rel="stylesheet" href="css/suggestions.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-bg text-dark font-mono">
@@ -34,7 +35,8 @@
   <!-- Inventory -->
   <section id="inventory-tab" class="tab-content hidden">
     <div class="mb-4">
-      <input type="text" id="inventory-search" placeholder="Search for items..." class="w-full p-2 bg-white border-2 border-gray-300 rounded">
+      <input type="text" id="inventory-search" placeholder="Search for items..." class="w-full p-2 bg-white border-2 border-gray-300 rounded" autocomplete="off">
+      <div id="suggestions-container" class="absolute z-10 w-full bg-white border-2 border-gray-300 rounded mt-1"></div>
     </div>
     <div id="inventory-grid" class="auto-grid"></div>
   </section>
