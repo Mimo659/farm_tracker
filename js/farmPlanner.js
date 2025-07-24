@@ -1,5 +1,8 @@
-import { save } from './app.js';
+const STORAGE_KEY = 'stardewSave';
 
+function save(data) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+}
 export function renderFarmPlanner(data) {
   const root = document.getElementById('farm-planner-content');
   root.innerHTML = `
