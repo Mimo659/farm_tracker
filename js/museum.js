@@ -16,14 +16,28 @@ export function renderMuseum(data) {
       <img src="images/items/${m.img}" class="w-14 h-14 object-contain">
       <span class="text-xs">${m.name}</span>
       <span class="text-xs">${m.collected ? '✔' : ''}</span>
-      <div class="text-xs text-gray-500">${m.location}</div>
+      <button class="mt-2 text-xs px-2 py-1 bg-primary text-white rounded">
+        Location
+      </button>
+
+      <!-- location panel (initially hidden) -->
+      <div class="hidden mt-2 text-xs space-y-1 w-full">
+        <div class="text-xs text-gray-500">${m.location}</div>
+      </div>
     `;
-    card.addEventListener('click', () => {
+    card.addEventListener('click', e => {
+      if (e.target.tagName === 'BUTTON') return;
       m.collected = !m.collected;
-      // Save the updated data to local storage
       localStorage.setItem('stardewSave', JSON.stringify(data));
-      // Re-render the museum grid to reflect the changes
       renderMuseum(data);
+    });
+
+    // location button opens/closes panel
+    const btn = card.querySelector('button');
+    const panel = card.querySelector('div.hidden');
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      panel.classList.toggle('hidden');
     });
     grid.appendChild(card);
   });
