@@ -51,6 +51,13 @@ h1 {
 .glass .text-gray-400  { color: #6b7280 !important; }
 .glass .text-red-600   { color: #b91c1c !important; }
 
+#inventory-search {
+  background-color: var(--c-secondary);
+  border: 2px solid var(--c-dark);
+  color: var(--c-dark);
+  padding: 0.5rem;
+  width: 100%;
+}
 
   /* Styling for the header */
   header {

@@ -1,10 +1,15 @@
-export function renderInventory(data) {
+export function renderInventory(data, searchTerm = '') {
   const grid = document.getElementById('inventory-grid');
   grid.innerHTML = '';
 
-  // Filter and sort items: collected items go to the bottom
-  const collectedItems = data.items.filter(item => item.collected);
-  const uncollectedItems = data.items.filter(item => !item.collected);
+  // Filter items by search term
+  const filteredItems = data.items.filter(item =>
+    item.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  // Separate collected and uncollected items from the filtered list
+  const collectedItems = filteredItems.filter(item => item.collected);
+  const uncollectedItems = filteredItems.filter(item => !item.collected);
 
   // Combine the two arrays with uncollected items first
   const sortedItems = uncollectedItems.concat(collectedItems);
@@ -21,8 +26,15 @@ export function renderInventory(data) {
     card.addEventListener('click', () => {
       item.collected = !item.collected;
       localStorage.setItem('stardewSave', JSON.stringify(data));
-      renderInventory(data);
+      renderInventory(data, searchTerm);
     });
     grid.appendChild(card);
   });
 }
+
+document.getElementById('inventory-search').addEventListener('input', (e) => {
+  const data = JSON.parse(localStorage.getItem('stardewSave'));
+  if (data) {
+    renderInventory(data, e.target.value);
+  }
+});
