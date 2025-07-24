@@ -14,7 +14,9 @@ export async function loadGameData() {
       fetch('data/books.json').then(r => r.json()),
       fetch('data/animals.json').then(r => r.json()),
       fetch('data/skills.json').then(r => r.json()),
-      fetch('data/fish.json').then(r => r.json())
+      fetch('data/fish.json').then(r => r.json()),
+          fetch('data/dailyTasks.json').then(r => r.json())   // <-- NEW
+
     ]);
 
     return {
@@ -38,7 +40,8 @@ export async function loadGameData() {
       books,
       animals,
       skills,
-      fish
+      fish,
+         dailyTasks   // <-- NEW
     };
   } catch (error) {
     console.error('Error loading game data:', error);

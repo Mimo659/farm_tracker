@@ -1,0 +1,7 @@
+[
+  { "id": 1, "text": "Water all crops",        "done": false },
+  { "id": 2, "text": "Pet / milk animals",     "done": false },
+  { "id": 3, "text": "Check crab pots",        "done": false },
+  { "id": 4, "text": "Gift a villager",        "done": false },
+  { "id": 5, "text": "Mine 10 floors",         "done": false }
+]
