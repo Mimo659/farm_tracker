@@ -49,7 +49,6 @@ tabs.forEach(btn =>
       case 'museum':    renderMuseum(data);    break;
       case 'fish':      renderFish(data);      break;
         case 'dailyTasks':  renderDailyTasks(data); break; // <-- NEW
-
     }
   })
 );
