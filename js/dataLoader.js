@@ -1,8 +1,9 @@
 export async function loadGameData() {
-  // wrap in try/catch so a single 404 doesn’t kill the app
+  // helper: safe fetch that never throws, returns fallback on any error
   async function fetchJSON(path, fallback = []) {
     try {
-      return await fetch(path).then(r => r.json());
+      const r = await fetch(path);
+      return r.ok ? await r.json() : fallback;
     } catch {
       console.warn(`Could not load ${path}`);
       return fallback;
@@ -10,8 +11,19 @@ export async function loadGameData() {
   }
 
   const [
-    languages, items, villagers, bundles, achievements,
-    museum, secretNotes, books, animals, skills, fish, dailyTasks
+    languages,
+    items,
+    villagers,
+    bundles,
+    achievements,
+    museum,
+    secretNotes,
+    books,
+    animals,
+    skills,
+    fish,
+    dailyTasks,
+    planner
   ] = await Promise.all([
     fetchJSON('data/languages.json', {}),
     fetchJSON('data/items.json', []),
@@ -24,7 +36,8 @@ export async function loadGameData() {
     fetchJSON('data/animals.json', []),
     fetchJSON('data/skills.json', []),
     fetchJSON('data/fish.json', []),
-    fetchJSON('data/dailyTasks.json', [])
+    fetchJSON('data/dailyTasks.json', []),
+    fetchJSON('data/plannerAssets.json', [])
   ]);
 
   return {
@@ -49,6 +62,7 @@ export async function loadGameData() {
     animals,
     skills,
     fish,
-    dailyTasks
+    dailyTasks,
+    planner
   };
 }

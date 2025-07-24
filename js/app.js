@@ -5,6 +5,7 @@ import { renderBundles }   from './bundles.js';
 import { renderMuseum }    from './museum.js';
 import { renderFish }      from './fish.js';
 import { renderDailyTasks } from './dailyTasks.js';
+import { renderFarmPlanner } from './farmPlanner.js';
 
 const STORAGE_KEY = 'stardewSave';
 
@@ -42,6 +43,8 @@ const STORAGE_KEY = 'stardewSave';
         case 'museum':     renderMuseum(data);    break;
         case 'fish':       renderFish(data);      break;
         case 'dailyTasks': renderDailyTasks(data); break;
+        case 'planner': renderFarmPlanner(data); break;
+
       }
     })
   );
