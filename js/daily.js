@@ -1,6 +1,6 @@
 // js/daily.js
 
-let dailyTasks = [
+let dailyTasks = JSON.parse(localStorage.getItem('dailyTasks')) || [
   { text: 'Check TV: Watch for the weather forecast, luck, and any useful recipes.', completed: false },
   { text: 'Check Mailbox: See if there are any letters or requests.', completed: false },
   { text: 'Water Crops: If using a watering can, water all your crops.', completed: false },
@@ -16,6 +16,10 @@ let dailyTasks = [
   { text: 'Process Goods: Place artisan goods in the shipping bin to sell at the end of the day.', completed: false },
   { text: 'Attend Festivals: Check the calendar for any special events and attend if you can.', completed: false }
 ];
+
+function saveTasks() {
+  localStorage.setItem('dailyTasks', JSON.stringify(dailyTasks));
+}
 
 function renderDaily(data) {
   const dailyContainer = document.getElementById('daily-grid');
@@ -39,6 +43,7 @@ function renderDaily(data) {
     checkbox.addEventListener('change', (event) => {
       const index = event.target.dataset.index;
       dailyTasks[index].completed = event.target.checked;
+      saveTasks();
       renderDaily(data);
     });
   });
@@ -48,6 +53,7 @@ function renderDaily(data) {
     button.addEventListener('click', (event) => {
       const index = event.target.dataset.index;
       dailyTasks.splice(index, 1);
+      saveTasks();
       renderDaily(data);
     });
   });
@@ -59,6 +65,7 @@ function renderDaily(data) {
     if (newTaskText) {
       dailyTasks.push({ text: newTaskText, completed: false });
       newTaskInput.value = '';
+      saveTasks();
       renderDaily(data);
     }
   };
