@@ -7,15 +7,14 @@ import { renderFish }      from './fish.js';
 import { renderDailyTasks } from './dailyTasks.js';
 
 const STORAGE_KEY = 'stardewSave';
-let data;          // will hold the merged save
 
 // ---------- load or create ----------
 (async () => {
   const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
-  const fresh = await loadGameData();          // always has dailyTasks
-  data = saved ? { ...fresh, ...saved } : fresh;
+  const fresh = await loadGameData();
+  const data = saved ? { ...fresh, ...saved } : fresh;
 
-  // ---------- wire up UI ----------
+  // ---------- reset ----------
   document.getElementById('reset-btn').addEventListener('click', () => {
     if (confirm('Delete everything?')) {
       localStorage.removeItem(STORAGE_KEY);
@@ -23,6 +22,7 @@ let data;          // will hold the merged save
     }
   });
 
+  // ---------- tab switching ----------
   const tabs = document.querySelectorAll('.tab');
   tabs.forEach(btn =>
     btn.addEventListener('click', () => {
@@ -46,6 +46,6 @@ let data;          // will hold the merged save
     })
   );
 
-  // open first tab
+  // ---------- start ----------
   tabs[0].click();
 })();
